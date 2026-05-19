@@ -16,25 +16,27 @@ export function MainHeader() {
   const getNavItems = () => {
     if (!isHydrated) {
       return [
-        { label: "고객센터", href: "/#notice", active: false },
-        { label: "회원가입", href: "/signup", active: false },
-        { label: "로그인", href: "/login", active: false },
+         { label: '고객센터', href: '/#notice', active: false },
+    { label: '회사소개', href: '/about', active: false },
+    { label: '공지사항', href: '/faq', active: false },
+    { label: '자주 묻는 질문', href: '/notice', active: false },
       ];
     }
 
     if (isAuthenticated) {
       return [
-        { label: "고객센터", href: "/#notice", active: false },
-        { label: "주문 내역", href: "/order", active: false },
-        { label: "마이페이지", href: "/mypage", active: false },
-        { label: "로그아웃", onClick: handleLogout, active: false },
+         { label: '고객센터', href: '/#notice', active: false },
+    { label: '회사소개', href: '/about', active: false },
+    { label: '공지사항', href: '/faq', active: false },
+    { label: '자주 묻는 질문', href: '/notice', active: false },
       ];
     }
 
     return [
-      { label: "고객센터", href: "/#notice", active: false },
-      { label: "회원가입", href: "/signup", active: false },
-      { label: "로그인", href: "/login", active: false },
+       { label: '고객센터', href: '/#notice', active: false },
+    { label: '회사소개', href: '/about', active: false },
+    { label: '공지사항', href: '/faq', active: false },
+    { label: '자주 묻는 질문', href: '/notice', active: false },
     ];
   };
 
