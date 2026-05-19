@@ -26,9 +26,7 @@ export function MainFooter() {
             </div>
 
             <p className="mt-5 text-[14px] leading-[1.9] text-[#475569] md:text-[15px]">
-              pintoss.co.kr은 디지털 상품 이용 흐름과 결제 관련 기준을 정리한
-              안내 페이지입니다. 이용 전 확인 요소와 자주 묻는 상황을 정보 중심으로
-              제공합니다.
+              365일 24시간 언제 어디서나 이용 가능한 빠르고 안전한 거래 서비스! 실시간 고객센터 운영으로 신속한 응대와 5분 이내 빠른 거래 완료, 투명한 시세 제공으로 신뢰할 수 있는 거래 환경을 제공합니다.
             </p>
           </div>
 
@@ -39,7 +37,7 @@ export function MainFooter() {
             </p>
 
             <p className="mt-3 text-[28px] font-black tracking-[-1px] text-[#0F172A]">
-              010-9300-4202
+              051-710-2985
             </p>
 
             <p className="mt-2 text-[13px] leading-[1.7] text-[#64748B]">
@@ -59,10 +57,10 @@ export function MainFooter() {
             </p>
 
             <ul className="space-y-3 text-[13px] leading-[1.7] text-[#475569] md:text-[14px]">
-              <li>상호명 : 핀토스 가이드</li>
-              <li>대표자 : 조문국</li>
-              <li>사업자등록번호 : 590-95-01527</li>
-              <li>통신판매업 신고번호 : 2024-부산진-1016</li>
+              <li>상호명 : 신카머니존 </li>
+              <li>대표자 : 최진택</li>
+              <li>사업자등록번호 : 244-66-70377</li>
+          
             </ul>
           </div>
 
@@ -72,10 +70,9 @@ export function MainFooter() {
             </p>
 
             <ul className="space-y-3 text-[13px] leading-[1.7] text-[#475569] md:text-[14px]">
-              <li>이메일 : admin@pintoss.co.kr</li>
+              <li>이메일 : cs@sinyongkadeu.com</li>
               <li>문의 담당 : 운영지원팀</li>
-              <li>연락처 : 010-9300-4202</li>
-              <li>운영 문의 : admin@pintoss.co.kr</li>
+             
             </ul>
           </div>
 
