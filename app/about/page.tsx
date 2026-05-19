@@ -1,3 +1,4 @@
+import { MainHeader, MainFooter } from "@/components/layout";
 export default function AboutPage() {
   return (
     <main className="bg-[#F6F8FC]">
