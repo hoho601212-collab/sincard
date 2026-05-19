@@ -10,32 +10,32 @@ export function AllProductsSection() {
     {
       id: 1,
       name: "신용카드 현금화란?",
-      imageUrl: "/placeholder.png",
+      imageUrl: "/safe-transaction-check.webp",
     },
     {
       id: 2,
       name: "신용카드 현금화, 누가 왜 선택할까?",
-      imageUrl: "/placeholder.png",
+      imageUrl: "/transparent-fee-system.webp",
     },
     {
       id: 3,
       name: "신용카드 현금화 이용층은?",
-      imageUrl: "/placeholder.png",
+      imageUrl: "/신용카드-현금화_이용층.webp",
     },
     {
       id: 4,
       name: "장단점 분석",
-      imageUrl: "/placeholder.png",
+      imageUrl: "/장단점.webp",
     },
     {
       id: 5,
       name: "이용시 주의 사항 (TIP)",
-      imageUrl: "/placeholder.png",
+      imageUrl: "/주의사항.webp",
     },
     {
       id: 6,
       name: "안전하고 신뢰있는 업체 선택방법",
-      imageUrl: "/placeholder.png",
+      imageUrl: "/업체선정팁.webp",
     },
   ];
 
