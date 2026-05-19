@@ -94,64 +94,7 @@ export default function Home() {
       </section>
       
 
-      <section
-        id="safety"
-        className="bg-[#F4F7FB] px-4 py-10 sm:px-8 md:px-16 lg:px-[120px] xl:px-[200px] md:py-16 lg:py-20"
-      >
-        <h2 className="text-[22px] font-bold text-[#1F2937] mb-6 md:text-[30px] lg:text-[34px] md:mb-8 lg:mb-10">
-          결제 흐름과 확인 요소 안내
-        </h2>
-
-        <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:grid-cols-4 lg:gap-8">
-          {[
-            {
-              src: "/Rectangle 55.png",
-              alt: "실시간 이용 안내",
-              title: "실시간 이용 안내",
-              desc: "이용 과정에서 필요한 확인 절차와 진행 흐름을 시간대와 관계없이 쉽게 살펴볼 수 있습니다.",
-            },
-            {
-              src: "/lock.png",
-              alt: "인증 및 확인 절차",
-              title: "인증 및 확인 절차",
-              desc: "본인확인과 보안 기준을 먼저 이해하면 결제 제한 상황을 더 차분하게 판단할 수 있습니다.",
-            },
-            {
-              src: "/shield.png",
-              alt: "상품권 이용 기준",
-              title: "상품권 이용 기준",
-              desc: "상품권 이용 전 확인해야 할 기본 기준과 발급 흐름을 정보 중심으로 정리했습니다.",
-            },
-            {
-              src: "/card.png",
-              alt: "결제 방식 안내",
-              title: "결제 방식 안내",
-              desc: "카드와 휴대폰 결제 방식의 차이를 비교하고, 이용 전 확인할 항목을 안내합니다.",
-            },
-          ].map((item) => (
-            <div
-              key={item.title}
-              className="bg-white border border-[#E5EDF7] shadow-[0_8px_24px_rgba(15,23,42,0.04)] rounded-[22px] p-4 flex flex-col items-center text-center md:p-6"
-            >
-              <div className="relative w-[80px] h-[80px] mb-3 md:w-[140px] md:h-[140px]">
-                <Image
-                  src={item.src}
-                  alt={item.alt}
-                  fill
-                  className="object-contain"
-                  loading="lazy"
-                />
-              </div>
-              <p className="text-[14px] font-bold text-[#1F2937] mb-1 md:text-[20px] md:mb-2">
-                {item.title}
-              </p>
-              <p className="text-[11px] text-[#667085] leading-[1.55] md:text-[15px]">
-                {item.desc}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
+     
 
       <section
         id="notice"
