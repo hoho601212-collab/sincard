@@ -92,7 +92,48 @@ export default function Home() {
           ))}
         </div>
       </section>
-      
+      <section className="bg-[#F4F7FB] px-4 pt-10 pb-6 sm:px-8 md:px-16 lg:px-[120px] xl:px-[200px] md:pt-16 md:pb-8 lg:pt-20 lg:pb-10">
+        <div className="flex items-center justify-between mb-4 md:mb-6">
+          <h2 className="text-[20px] font-bold text-[#1F2937] md:text-[26px]">
+            자주 확인하는 항목
+          </h2>
+        </div>
+
+        <Suspense
+          fallback={
+            <div className="flex gap-4 md:gap-8">
+              {[1, 2, 3, 4].map((i) => (
+                <div
+                  key={i}
+                  className="bg-white border border-[#E5EDF7] rounded-[22px] w-[150px] h-[220px] animate-pulse md:w-[236px] md:h-[280px]"
+                />
+              ))}
+            </div>
+          }
+        >
+          <PopularProductsSection />
+        </Suspense>
+      </section>
+
+      <section
+        id="products"
+        className="bg-[#F4F7FB] px-4 py-6 sm:px-8 md:px-16 lg:px-[120px] xl:px-[200px] md:py-10 lg:py-12"
+      >
+        <Suspense
+          fallback={
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-3 md:gap-5 lg:grid-cols-4 lg:gap-8">
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((i) => (
+                <div
+                  key={i}
+                  className="bg-white border border-[#E5EDF7] rounded-[22px] h-[150px] animate-pulse md:h-[180px] lg:h-[200px]"
+                />
+              ))}
+            </div>
+          }
+        >
+          <AllProductsSection />
+        </Suspense>
+      </section>
 
      
 
