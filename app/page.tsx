@@ -27,34 +27,46 @@ export default function Home() {
         className="bg-[#F4F7FB] px-4 py-10 sm:px-8 md:px-16 lg:px-[120px] xl:px-[200px] md:py-16 lg:py-20"
       >
         <h2 className="text-[22px] font-bold text-[#1F2937] mb-6 md:text-[30px] lg:text-[34px] md:mb-8 lg:mb-10">
-          결제 흐름과 확인 요소 안내
+          안전하게 활용하려면(실전 체크리스트)
         </h2>
 
         <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:grid-cols-4 lg:gap-8">
           {[
             {
               src: "/Rectangle 55.png",
-              alt: "실시간 이용 안내",
-              title: "실시간 이용 안내",
-              desc: "이용 과정에서 필요한 확인 절차와 진행 흐름을 시간대와 관계없이 쉽게 살펴볼 수 있습니다.",
+              alt: "합법 루트만",
+              title: "합법 루트만",
+              desc: "실물 거래 증빙이 남는 방식, 카드사 공식 서비스만 이용",
             },
             {
               src: "/lock.png",
-              alt: "인증 및 확인 절차",
-              title: "인증 및 확인 절차",
-              desc: "본인확인과 보안 기준을 먼저 이해하면 결제 제한 상황을 더 차분하게 판단할 수 있습니다.",
+              alt: "정확한 비용 계산",
+              title: "정확한 비용 계산",
+              desc: "“실수령액”과 “총상환액(수수료·이자 포함)”을 정확하게 파악한후 이용",
             },
             {
               src: "/shield.png",
-              alt: "상품권 이용 기준",
-              title: "상품권 이용 기준",
-              desc: "상품권 이용 전 확인해야 할 기본 기준과 발급 흐름을 정보 중심으로 정리했습니다.",
+              alt: "상환 가능성",
+              title: "상환 가능성",
+              desc: "급여일/현금 유입일 기준으로 결제일 역산 → 가능한지 먼저 판단",
             },
             {
               src: "/card.png",
-              alt: "결제 방식 안내",
-              title: "결제 방식 안내",
-              desc: "카드와 휴대폰 결제 방식의 차이를 비교하고, 이용 전 확인할 항목을 안내합니다.",
+              alt: "거래 빈도 조절",
+              title: "거래 빈도 조절",
+              desc: "동일 업종·고액 반복 결제는 피하고, 필요 최소 횟수로",
+            },
+        {
+              src: "/card.png",
+              alt: "증빙 보관",
+              title: "증빙 보관",
+              desc: "영수증·거래내역·정산 화면 캡처를 보관(분쟁·오해 방지)",
+            },
+        {
+              src: "/card.png",
+              alt: "이용전 대안 비교",
+              title: "이용전 대안 비교",
+              desc: "정책대출·비상금 대출·분할납부 등 비용·리스크 낮은 대안도 함께 검토",
             },
           ].map((item) => (
             <div
