@@ -27,6 +27,16 @@ export function AllProductsSection() {
       name: "장단점 분석",
       imageUrl: "/placeholder.png",
     },
+    {
+      id: 5,
+      name: "이용시 주의 사항 (TIP)",
+      imageUrl: "/placeholder.png",
+    },
+    {
+      id: 6,
+      name: "안전하고 신뢰있는 업체 선택방법",
+      imageUrl: "/placeholder.png",
+    },
   ];
 
   return (
@@ -559,6 +569,258 @@ export function AllProductsSection() {
     </div>
   </div>
 )}
+              <div className="space-y-5">
+  <div className="rounded-[18px] border border-[#E5EAF3] bg-[#F8FAFF] p-5">
+
+    <p className="mb-3 text-[13px] font-semibold text-[#0565FF]">
+      이용 전 체크사항
+    </p>
+
+    <h4 className="mb-4 text-[22px] font-bold leading-[1.4] text-[#111827]">
+      이용 시 주의 사항 (TIP)
+    </h4>
+
+    <p className="mb-6 text-[15px] leading-[1.9] text-[#4B5563]">
+      거래 전 기본적인 확인 사항만 점검해도 불필요한 위험을 줄이는 데
+      도움이 될 수 있습니다. 아래 항목들을 먼저 확인해보세요.
+    </p>
+
+    <div className="space-y-4">
+
+      <div className="rounded-[16px] bg-white p-5 shadow-sm">
+        <div className="mb-3 flex items-center gap-2">
+          <div className="h-[10px] w-[10px] rounded-full bg-[#0565FF]" />
+
+          <p className="text-[17px] font-bold text-[#111827]">
+            1) 카드사 내부 규정
+          </p>
+        </div>
+
+        <p className="text-[15px] leading-[1.9] text-[#374151]">
+          카드사는 자체적으로 위험 거래 기준을 운영합니다.
+          특정 품목의 반복 결제, 단기간 고액 결제,
+          동일 패턴의 반복 사용은 이상 거래로 인식될 수 있으며
+          승인 거절 또는 추가 인증 요청 사유가 될 수 있습니다.
+        </p>
+      </div>
+
+      <div className="rounded-[16px] bg-white p-5 shadow-sm">
+        <div className="mb-3 flex items-center gap-2">
+          <div className="h-[10px] w-[10px] rounded-full bg-[#0565FF]" />
+
+          <p className="text-[17px] font-bold text-[#111827]">
+            2) 과도한 이용 경고
+          </p>
+        </div>
+
+        <p className="text-[15px] leading-[1.9] text-[#374151]">
+          한 번에 과도하게 이용하는 경우 다음 달 카드 대금 부담이 커질 수
+          있습니다. 사용 전 미리 상환 계획을 세우고,
+          본인의 자금 상황에 맞게 이용하는 것이 중요합니다.
+        </p>
+
+        <div className="mt-4 rounded-[14px] bg-[#F5F7FA] p-4">
+          <p className="text-[14px] leading-[1.8] text-[#4B5563]">
+            짧은 시간 안에 반복적으로 고액 결제를 진행하는 경우
+            카드 한도 축소, 거래 제한, 신용도 하락 가능성이 발생할 수 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div className="rounded-[16px] bg-white p-5 shadow-sm">
+        <div className="mb-3 flex items-center gap-2">
+          <div className="h-[10px] w-[10px] rounded-full bg-[#0565FF]" />
+
+          <p className="text-[17px] font-bold text-[#111827]">
+            3) 사칭업체 피해 예방
+          </p>
+        </div>
+
+        <p className="text-[15px] leading-[1.9] text-[#374151]">
+          개인 거래 또는 검증되지 않은 업체를 이용할 경우
+          사기 피해 위험이 존재할 수 있습니다.
+          거래 전 업체 정보, 후기, 운영 기간,
+          연락처 등을 충분히 확인하는 것이 중요합니다.
+        </p>
+
+        <div className="mt-4 rounded-[14px] bg-[#FFF7ED] p-4">
+          <p className="mb-1 font-semibold text-[#EA580C]">
+            주의해야 할 사례
+          </p>
+
+          <p className="text-[14px] leading-[1.8] text-[#7C2D12]">
+            지나치게 낮은 수수료를 강조하거나,
+            비정상적으로 좋은 조건만 제시하며 빠른 입금을 유도하는 경우에는
+            추가 확인이 필요합니다.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="mt-6 rounded-[18px] bg-[#EEF5FF] p-5">
+      <p className="mb-2 text-[16px] font-bold text-[#1D4ED8]">
+        안전하게 확인하는 방법
+      </p>
+
+      <p className="text-[15px] leading-[1.8] text-[#334155]">
+        진행 전 거래 구조, 수수료, 상환 계획,
+        카드사 정책 여부를 충분히 확인하고,
+        공식 정보와 실제 운영 여부를 먼저 검토하는 습관이 중요합니다.
+      </p>
+    </div>
+
+  </div>
+</div>
+              <div className="space-y-6">
+  <div className="rounded-[20px] border border-[#E5EAF3] bg-[#F8FAFF] p-5">
+
+    <div className="mb-6">
+      <p className="mb-3 inline-flex rounded-full bg-[#EEF4FF] px-3 py-1 text-[13px] font-semibold text-[#0565FF]">
+        안전 거래 가이드
+      </p>
+
+      <h4 className="mb-4 text-[24px] font-bold leading-[1.4] text-[#111827]">
+        안전하고 신뢰있는 업체 선택방법
+      </h4>
+
+      <p className="text-[15px] leading-[1.9] text-[#4B5563]">
+        신용카드 현금화를 고려하고 있다면 어떤 방식으로,
+        어떤 업체를 이용할 것인지 먼저 판단하는 과정이 중요합니다.
+        아래 내용은 실제 거래 시 많이 확인하는 항목들을 기준으로
+        정리한 체크리스트입니다.
+      </p>
+    </div>
+
+    <div className="space-y-5">
+
+      <div className="rounded-[18px] bg-white p-5 shadow-sm">
+        <div className="mb-4 flex items-center gap-3">
+          <div className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-[#0565FF] text-[15px] font-bold text-white">
+            1
+          </div>
+
+          <p className="text-[18px] font-bold text-[#111827]">
+            필수 확인 항목
+          </p>
+        </div>
+
+        <div className="space-y-3 text-[15px] leading-[1.9] text-[#374151]">
+          <p>
+            거래 전 가장 먼저 확인해야 하는 부분은 실제 거래 구조가 존재하는지 여부입니다.
+          </p>
+
+          <div className="rounded-[14px] bg-[#F5F7FA] p-4">
+            <ul className="space-y-2">
+              <li>• 실물 거래가 실제로 이루어지는 구조인지 확인</li>
+              <li>• 상품권·물품 구매 후 판매 방식인지 확인</li>
+              <li>• 거래 영수증, 전표, 입금 내역 제공 여부 확인</li>
+              <li>• 사업자등록번호와 사업장 주소 공개 여부 확인</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="rounded-[18px] bg-white p-5 shadow-sm">
+        <div className="mb-4 flex items-center gap-3">
+          <div className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-[#0565FF] text-[15px] font-bold text-white">
+            2
+          </div>
+
+          <p className="text-[18px] font-bold text-[#111827]">
+            수수료의 투명성
+          </p>
+        </div>
+
+        <div className="space-y-3 text-[15px] leading-[1.9] text-[#374151]">
+          <p>
+            신뢰할 수 있는 업체는 거래 전 수수료 구조를 명확하게 설명합니다.
+            지나치게 낮은 수수료만 강조하는 경우에는 추가 확인이 필요할 수 있습니다.
+          </p>
+
+          <div className="rounded-[14px] bg-[#EEF5FF] p-4">
+            <ul className="space-y-2 text-[#334155]">
+              <li>• 수수료율 또는 범위를 사전에 안내하는지 확인</li>
+              <li>• 거래 금액별 실제 수령 금액 예시 요청</li>
+              <li>• 계좌이체·취소 수수료 등 추가 비용 여부 확인</li>
+              <li>• 진행 도중 조건이 변경되는지 여부 확인</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="rounded-[18px] bg-white p-5 shadow-sm">
+        <div className="mb-4 flex items-center gap-3">
+          <div className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-[#0565FF] text-[15px] font-bold text-white">
+            3
+          </div>
+
+          <p className="text-[18px] font-bold text-[#111827]">
+            거래 속도와 안정성
+          </p>
+        </div>
+
+        <div className="space-y-3 text-[15px] leading-[1.9] text-[#374151]">
+          <p>
+            대부분의 거래는 급하게 진행되는 경우가 많기 때문에
+            입금 속도와 거래 안정성도 중요한 요소입니다.
+          </p>
+
+          <div className="rounded-[14px] bg-[#F5F7FA] p-4">
+            <ul className="space-y-2">
+              <li>• 평균 송금 시간이 5~10분 이내인지 확인</li>
+              <li>• 업체 명의 계좌를 사용하는지 확인</li>
+              <li>• 개인 명의 계좌 사용 여부는 주의</li>
+              <li>• 24시간 입금 가능 여부 확인</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className="rounded-[18px] bg-white p-5 shadow-sm">
+        <div className="mb-4 flex items-center gap-3">
+          <div className="flex h-[36px] w-[36px] items-center justify-center rounded-full bg-[#0565FF] text-[15px] font-bold text-white">
+            4
+          </div>
+
+          <p className="text-[18px] font-bold text-[#111827]">
+            고객 후기와 평판 확인
+          </p>
+        </div>
+
+        <div className="space-y-3 text-[15px] leading-[1.9] text-[#374151]">
+          <p>
+            거래 전에는 업체명 검색을 통해 후기와 평판을 확인하는 것이 좋습니다.
+            단일 후기만 보기보다 여러 채널을 함께 비교해보는 것이 중요합니다.
+          </p>
+
+          <div className="rounded-[14px] bg-[#FFF7ED] p-4">
+            <ul className="space-y-2 text-[#7C2D12]">
+              <li>• 구글·네이버·커뮤니티·SNS 후기 검색</li>
+              <li>• 거래 속도와 응대 관련 리뷰 확인</li>
+              <li>• 실제 거래 인증 캡처 포함 여부 확인</li>
+              <li>• 광고성 후기만 반복되는 업체는 추가 검토 필요</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div className="mt-6 rounded-[18px] bg-[#EEF5FF] p-5">
+      <p className="mb-2 text-[16px] font-bold text-[#1D4ED8]">
+        체크 포인트 요약
+      </p>
+
+      <p className="text-[15px] leading-[1.9] text-[#334155]">
+        거래 전에는 수수료·사업자 정보·실제 거래 여부·입금 계좌·후기 등을
+        반드시 확인하고, 지나치게 좋은 조건만 강조하는 경우에는
+        추가 검토 후 진행 여부를 판단하는 것이 좋습니다.
+      </p>
+    </div>
+
+  </div>
+</div>
               <button
                 type="button"
                 onClick={() => setSelectedProduct(null)}
