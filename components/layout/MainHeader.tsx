@@ -38,5 +38,5 @@ export function MainHeader() {
     ];
   };
 
-  return <Header logoSrc="/logo.png" navItems={getNavItems()} />;
+  return <Header logoSrc="/신카머니존logo.png" navItems={getNavItems()} />;
 }
