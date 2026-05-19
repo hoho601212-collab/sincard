@@ -9,7 +9,7 @@ export function AllProductsSection() {
   const voucherIssuers = [
     {
       id: 1,
-      name: "모바일 문화상품권",
+      name: "신용카드 현금화란?",
       imageUrl: "/placeholder.png",
     },
     {
