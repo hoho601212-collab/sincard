@@ -9,17 +9,17 @@ export function AllProductsSection() {
   const voucherIssuers = [
     {
       id: 1,
-      name: "신용카드 현금화란?",
+      name: "개념",
       imageUrl: "/safe-transaction-check.webp",
     },
     {
       id: 2,
-      name: "신용카드 현금화, 누가 왜 선택할까?",
+      name: "이용 목적 분석",
       imageUrl: "/transparent-fee-system.webp",
     },
     {
       id: 3,
-      name: "신용카드 현금화 이용층은?",
+      name: "이용층 분석",
       imageUrl: "/신용카드-현금화_이용층.webp",
     },
     {
@@ -29,12 +29,12 @@ export function AllProductsSection() {
     },
     {
       id: 5,
-      name: "이용시 주의 사항 (TIP)",
+      name: "주의 사항",
       imageUrl: "/주의사항.webp",
     },
     {
       id: 6,
-      name: "안전하고 신뢰있는 업체 선택방법",
+      name: "업체 선택방법",
       imageUrl: "/업체선정팁.webp",
     },
   ];
@@ -46,29 +46,33 @@ export function AllProductsSection() {
         <span className="text-[#0565FF]">{voucherIssuers.length}</span>
       </h2>
 
-      <div className="grid grid-cols-2 gap-3 sm:gap-4 md:grid-cols-4">
+      <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
         {voucherIssuers.map((item) => (
-          <button
-            key={item.id}
-            type="button"
-            onClick={() => setSelectedProduct(item)}
-            className="h-[200px] rounded-[16px] border border-[#E5E7EB] bg-white p-6 text-left transition duration-200 hover:border-[#0565FF] hover:shadow-lg"
-          >
-            <div className="mb-12 flex justify-center">
-              <Image
-                src={item.imageUrl}
-                alt={item.name}
-                width={80}
-                height={80}
-                className="object-contain"
-              />
-            </div>
+  <button
+    key={item.id}
+    type="button"
+    onClick={() => setSelectedProduct(item)}
+    className="group min-h-[235px] rounded-[20px] border border-[#E5E7EB] bg-white p-5 text-center transition-all duration-300 hover:-translate-y-1 hover:border-[#0565FF] hover:shadow-xl"
+  >
+    <div className="mb-5 flex justify-center">
+      <div className="flex h-[90px] w-[90px] items-center justify-center rounded-[22px] bg-[#F8FAFF] transition-all duration-300 group-hover:bg-[#EEF4FF]">
+        <Image
+          src={item.imageUrl}
+          alt={item.name}
+          width={64}
+          height={64}
+          className="object-contain transition duration-300 group-hover:scale-105"
+        />
+      </div>
+    </div>
 
-            <p className="text-[18px] font-semibold leading-[1.5] text-[#212121]">
-              {item.name}
-            </p>
-          </button>
-        ))}
+    <div className="flex items-center justify-center">
+      <p className="min-h-[60px] break-keep text-[17px] font-semibold leading-[1.6] text-[#212121]">
+        {item.name}
+      </p>
+    </div>
+  </button>
+))}
       </div>
 
       {selectedProduct && (
