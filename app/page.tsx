@@ -33,37 +33,37 @@ export default function Home() {
         <div className="grid grid-cols-2 gap-3 sm:gap-4 md:gap-6 lg:grid-cols-4 lg:gap-8">
           {[
             {
-              src: "/Rectangle 55.png",
+              src: "/icon1.png",
               alt: "합법 루트만",
               title: "합법 루트만",
               desc: "실물 거래 증빙이 남는 방식, 카드사 공식 서비스만 이용",
             },
             {
-              src: "/lock.png",
+              src: "/icon2.png",
               alt: "정확한 비용 계산",
               title: "정확한 비용 계산",
               desc: "“실수령액”과 “총상환액(수수료·이자 포함)”을 정확하게 파악한후 이용",
             },
             {
-              src: "/shield.png",
+              src: "/icon3.png",
               alt: "상환 가능성",
               title: "상환 가능성",
               desc: "급여일/현금 유입일 기준으로 결제일 역산 → 가능한지 먼저 판단",
             },
             {
-              src: "/card.png",
+              src: "/icon4.png",
               alt: "거래 빈도 조절",
               title: "거래 빈도 조절",
               desc: "동일 업종·고액 반복 결제는 피하고, 필요 최소 횟수로",
             },
         {
-              src: "/card.png",
+              src: "/icon5.png",
               alt: "증빙 보관",
               title: "증빙 보관",
               desc: "영수증·거래내역·정산 화면 캡처를 보관(분쟁·오해 방지)",
             },
         {
-              src: "/card.png",
+              src: "/icon6.png",
               alt: "이용전 대안 비교",
               title: "이용전 대안 비교",
               desc: "정책대출·비상금 대출·분할납부 등 비용·리스크 낮은 대안도 함께 검토",
