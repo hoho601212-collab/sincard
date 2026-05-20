@@ -23,7 +23,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
     '무이자 할부 혜택 카드사별 최대 6개월.',
   buttonText = '상품권 이용 안내 보기',
   onButtonClick,
-  imageSrc = '/gift_card.png',
+  imageSrc = '/public/gift_card.png',
   imageAlt = '메인 배너',
   className,
 }) => {
