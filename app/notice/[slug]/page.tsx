@@ -12,6 +12,7 @@ export const dynamicParams = true;
 
 const FIXED_SLUG = "2026-credit-card-approval-requirements";
 const SECOND_FIXED_SLUG = "credit-card-cashout-vs-mobile-payment-cashout";
+const THIRD_FIXED_SLUG = "credit-card-cashout-90-percent";
 
 export async function generateMetadata({
   params,
@@ -35,7 +36,13 @@ export async function generateMetadata({
         "신용카드 현금화와 소액결제 현금화의 확보 방식, 이용 구조, 장단점, 주의사항을 비교한 가이드입니다.",
     };
   }
-
+if (slug === THIRD_FIXED_SLUG) {
+  return {
+    title: "신용카드 현금화 90%로 이용하는 방법",
+    description:
+      "신용카드 현금화 90% 이용 방법과 수수료 차이가 발생하는 이유, 안전하게 업체를 선택하는 기준을 정리했습니다.",
+  };
+}
   const notice = await client.fetch<Notice>(noticeBySlugQuery, { slug });
 
   if (!notice) {
@@ -64,7 +71,9 @@ export default async function NoticeDetailPage({
   if (slug === FIXED_SLUG) {
     return <CreditCardApprovalArticle />;
   }
-
+if (slug === THIRD_FIXED_SLUG) {
+  return <CreditCardCashout90Article />;
+}
   const notice = await client.fetch<Notice>(noticeBySlugQuery, { slug });
 
   if (!notice) {
@@ -425,6 +434,265 @@ function CreditCardApprovalArticle() {
             <iframe
               src="https://www.youtube.com/embed/KfZwLRPbEbo"
               title="신용카드 발급조건"
+              className="absolute left-0 top-0 h-full w-full"
+              allowFullScreen
+            />
+          </div>
+        function CreditCardCashout90Article() {
+  return (
+    <div className="min-h-screen bg-white">
+      <MainHeader />
+
+      <main className="px-4 py-10 md:px-8 md:py-14 lg:px-[120px] xl:px-[200px]">
+        <article className="mx-auto max-w-4xl text-[#222] leading-[1.85]">
+          <Link
+            href="/notice"
+            className="mb-8 inline-flex items-center text-[14px] font-medium text-[#0565FF] hover:underline md:text-[16px]"
+          >
+            ← 목록으로
+          </Link>
+
+          <h1 className="mb-6 text-[28px] font-extrabold leading-[1.35] text-[#111827] md:text-[40px]">
+            신용카드 현금화 90%로 이용하는 방법
+          </h1>
+
+          <p className="rounded-[18px] bg-[#F8FAFC] p-5 text-[18px] font-semibold text-[#111827]">
+            “같은 카드로 결제했는데 왜 나는 85%밖에 못 돌려받고, 친구는
+            90%를 받았을까?”
+          </p>
+
+          <p>
+            신용카드 현금화를 이용해본 사람이라면 대부분 한 번쯤 느껴봤을
+            의문입니다. 겉으로 보기엔 단순히 “카드로 결제 → 현금으로 받기”
+            과정 같지만, 실제로는 여러 가지 요인이 수수료에 영향을 줍니다.
+          </p>
+
+          <p>
+            이번 글에서는 신용카드 현금화 90% 이용 방법, 그리고 수수료가
+            달라지는 현실적인 이유를 사용자 입장에서 풀어보겠습니다. 빠른 현금이
+            필요할 때 어떤 기준으로 업체를 선택해야 할지도 함께 짚어보겠습니다.
+          </p>
+
+          <img
+            src="http://sinyongkadeu.com/wp-content/uploads/2026/02/신용카드-현금화-90.jpg"
+            alt="신용카드 현금화 90%"
+            className="my-10 w-full rounded-[18px]"
+          />
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            1. 신용카드 현금화는 주로 누가 이용하나요?
+          </h2>
+
+          <p>
+            신용카드 현금화는 단순히 돈이 급한 사람들만의 방법은 아닙니다.
+            현실적으로는 다양한 상황과 이유로 이용됩니다. 대부분은 카드 한도는
+            남아 있지만 현금이 부족한 경우에 이용합니다.
+          </p>
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            2. 신용카드 현금화의 실제 진행 원리
+          </h2>
+
+          <p>
+            신용카드 현금화는 단순히 카드 결제 후 입금받는 형태가 아닙니다.
+            기본적으로 상품 거래를 기반으로 하는 구조입니다.
+          </p>
+
+          <ol className="list-decimal pl-6">
+            <li>사용자가 카드로 정해진 상품, 예를 들어 상품권·기프트카드를 결제합니다.</li>
+            <li>현금화 업체가 해당 상품을 다시 매입합니다.</li>
+            <li>그 과정에서 서비스 이용료, 즉 수수료가 발생합니다.</li>
+            <li>10% 수준의 수수료가 빠지면 결과적으로 약 90% 정도의 현금이 입금됩니다.</li>
+          </ol>
+
+          <p>
+            즉, 신용카드 현금화 90% 업체란 수수료가 10% 이내로 유지되는 곳을
+            말합니다.
+          </p>
+
+          <div className="my-8 rounded-[18px] bg-[#EFF6FF] p-6">
+            <h3 className="mb-3 text-[21px] font-bold text-[#111827]">
+              신용카드로 상품권을 구매할 수 있는 대표 업체 5곳
+            </h3>
+
+            <ol className="list-decimal pl-6">
+              <li>카카오톡 선물하기</li>
+              <li>원스토어</li>
+              <li>24고고핀</li>
+              <li>핀토스몰</li>
+              <li>캐시핀</li>
+            </ol>
+          </div>
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            3. 신용카드 현금화 수수료는 왜 업체마다 다를까?
+          </h2>
+
+          <img
+            src="http://sinyongkadeu.com/wp-content/uploads/2026/02/신용카드-현금화-90-수수료-차이.jpg"
+            alt="신용카드 현금화 90 수수료 차이"
+            className="my-10 w-full rounded-[18px]"
+          />
+
+          <p>
+            비슷한 구조인데도 어떤 곳은 90%, 또 다른 곳은 85%만 준다고 합니다.
+            그 이유는 단순히 업체 정책 때문만은 아닙니다. 현금화 비율에는 여러
+            변수가 작용합니다.
+          </p>
+
+          <div className="grid gap-5">
+            <div className="rounded-[18px] border border-[#E5E7EB] p-5">
+              <h3 className="mb-2 text-[20px] font-bold">① 거래 상품의 환금성 차이</h3>
+              <p>
+                문화상품권, 구글기프트카드처럼 유통량이 많고 시장에서 잘 팔리는
+                상품은 수수료가 낮습니다. 반면 주유권이나 특정 브랜드 카드처럼
+                재판매가 어려운 상품은 수수료가 높아질 수 있습니다.
+              </p>
+            </div>
+
+            <div className="rounded-[18px] border border-[#E5E7EB] p-5">
+              <h3 className="mb-2 text-[20px] font-bold">② 결제 금액의 크기</h3>
+              <p>
+                소액 거래는 고정비 부담이 커서 수수료가 다소 높습니다. 반대로
+                50만 원 이상 고액 거래는 효율성이 높아 수수료를 더 낮출 수
+                있습니다.
+              </p>
+            </div>
+
+            <div className="rounded-[18px] border border-[#E5E7EB] p-5">
+              <h3 className="mb-2 text-[20px] font-bold">③ 카드 종류 및 사용 상태</h3>
+              <p>
+                신용카드인지, 체크카드인지, 결제 한도가 꽉 찬 상태인지에 따라
+                차이가 생깁니다. 결제 승인 리스크가 있는 상태에서는 업체가
+                손실을 대비해 수수료를 높게 책정할 수 있습니다.
+              </p>
+            </div>
+
+            <div className="rounded-[18px] border border-[#E5E7EB] p-5">
+              <h3 className="mb-2 text-[20px] font-bold">④ 요청 속도 및 시간대</h3>
+              <p>
+                빠른 진행을 원하면 긴급 수수료가 붙는 경우가 있습니다. 일반적인
+                거래보다 처리 순서를 앞당겨야 하기 때문입니다.
+              </p>
+            </div>
+
+            <div className="rounded-[18px] border border-[#E5E7EB] p-5">
+              <h3 className="mb-2 text-[20px] font-bold">⑤ 업체의 운영 시스템과 규모</h3>
+              <p>
+                시스템이 안정적이고 거래량이 많은 업체는 현금화 단가를 낮게
+                유지할 수 있습니다. 반면 소규모 업체는 외부 리스크를 감안해야
+                하므로 수수료가 높을 수 있습니다.
+              </p>
+            </div>
+          </div>
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            4. 낮은 수수료만 보고 선택했다가 생기는 문제들
+          </h2>
+
+          <p>
+            실제 사례를 살펴보면 낮은 수수료만 믿고 거래했다가 낭패를 보는
+            경우가 꽤 많습니다.
+          </p>
+
+          <div className="rounded-[18px] bg-[#FFF7ED] p-6">
+            <p>
+              예를 들어, 대학생 김모 씨는 인터넷 광고를 보고 “수수료 5%, 즉시
+              입금”이라는 문구를 보고 신청했습니다. 처음엔 빠르게 진행되는
+              듯했지만, 입금까지 6시간이 걸리고 결국 15% 이상 비용이 빠졌습니다.
+            </p>
+
+            <p>
+              결국 김 씨는 후기 평가가 좋은 인증업체로 다시 진행했고, 이번엔
+              90% 정확히 입금받았습니다.
+            </p>
+          </div>
+
+          <p>
+            이 사례는 낮은 수수료보다 중요한 것이 정확한 거래와 신속한 처리라는
+            점을 보여줍니다.
+          </p>
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            5. 신용카드 현금화 이용 시 꼭 알아야 할 위험 요소
+          </h2>
+
+          <ul className="list-disc pl-6">
+            <li>비정상 링크나 앱 설치를 요구하는 곳은 피하세요.</li>
+            <li>개인정보 탈취나 카드 계정 도용 위험이 있습니다.</li>
+            <li>수수료 0%나 100% 지급 광고는 허위일 가능성이 큽니다.</li>
+            <li>카드사 약관에 위배되는 방식은 한도 제한이나 결제정지로 이어질 수 있습니다.</li>
+            <li>익명 거래, 개인 간 거래는 사기 피해 가능성이 높습니다.</li>
+          </ul>
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            6. 전문가가 알려주는 합리적인 현금화 전략
+          </h2>
+
+          <div className="grid gap-4">
+            {[
+              [
+                "1) 거래 패턴 분산하기",
+                "한 번에 큰 금액보다 여러 번 나누어 결제하면 결제 리스크가 줄어듭니다.",
+              ],
+              [
+                "2) 후기와 운영 내역 검증",
+                "후기나 실제 입금 시간, 담당자 소통 여부를 확인하면 거래 지연 위험을 줄일 수 있습니다.",
+              ],
+              [
+                "3) 환금성 높은 상품 이용",
+                "문화상품권·구글기프트카드·해피머니 등 거래 빈도가 높은 상품이 높은 현금화 비율을 제공하는 경우가 많습니다.",
+              ],
+              [
+                "4) 실시간 견적 문의",
+                "두세 곳의 업체에 직접 견적을 요청하면 더 유리한 조건을 확인할 수 있습니다.",
+              ],
+              [
+                "5) 수수료보다는 신뢰 중심으로 판단",
+                "결제 구조가 투명하고 상담 과정이 명확한 업체는 결과적으로 더 안전할 수 있습니다.",
+              ],
+            ].map(([title, desc]) => (
+              <div key={title} className="rounded-[18px] border border-[#E5E7EB] p-5">
+                <p className="font-bold text-[#111827]">{title}</p>
+                <p className="mt-2 text-[#4B5563]">{desc}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            실제로 많이 묻는 질문
+          </h2>
+
+          <div className="grid gap-4">
+            {[
+              [
+                "Q1. 최대 90% 현금화가 가능한가요?",
+                "환금성 높은 상품을 이용하고 일정 금액 이상 거래 시 가능합니다. 다만 모든 건에 일괄 적용되지는 않습니다.",
+              ],
+              [
+                "Q2. 입금까지 얼마나 걸리나요?",
+                "보통 10~30분 이내로 진행됩니다. 야간이나 주말에는 처리 시간이 길어질 수 있습니다.",
+              ],
+              [
+                "Q3. 수수료가 업체마다 왜 다른가요?",
+                "상품, 거래 금액, 시간대, 내부 정책 등에 따라 결정됩니다. 시장 상황에 따라 실시간으로 변동될 수 있습니다.",
+              ],
+            ].map(([q, a]) => (
+              <div key={q} className="rounded-[18px] border border-[#E5E7EB] p-5">
+                <p className="font-bold text-[#111827]">{q}</p>
+                <p className="mt-2 text-[#4B5563]">{a}</p>
+              </div>
+            ))}
+          </div>
+
+          <h2 className="mb-5 mt-14 text-[26px] font-bold text-[#111827] md:text-[32px]">
+            신용카드 관리 제대로 하는 방법
+          </h2>
+
+          <div className="relative my-6 h-0 overflow-hidden rounded-[18px] pb-[56.25%]">
+            <iframe
+              src="https://www.youtube.com/embed/_EYpzyaJ9HQ"
+              title="신용카드 관리 제대로 하는 방법"
               className="absolute left-0 top-0 h-full w-full"
               allowFullScreen
             />
