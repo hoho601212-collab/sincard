@@ -11,7 +11,7 @@ import { NoticePopup } from "@/components/NoticePopup";
 export default function Home() {
   return (
     <div className="min-h-screen bg-[#F4F7FB]">
-      <NoticePopup />
+    
       <MainHeader />
       <FloatingNav />
 
