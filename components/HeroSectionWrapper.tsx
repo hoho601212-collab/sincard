@@ -12,7 +12,7 @@ export function HeroSectionWrapper() {
         const element = document.querySelector("#products");
         if (element) element.scrollIntoView({ behavior: "smooth" });
       }}
-      imageSrc="/Group 14.png"
+      imageSrc="/gift_card.png"
     />
   );
 }
