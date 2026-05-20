@@ -67,7 +67,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     console.error('Sitemap: Failed to fetch products', error);
   }
 
-  // 동적 공지사항 페이지들 - Sanity에서 공지사항 목록 조회
+  // 동적 정보공유 페이지들 - Sanity에서 정보공유 목록 조회
   let noticePages: MetadataRoute.Sitemap = [];
 
   if (SANITY_ENABLED) {

@@ -20,24 +20,24 @@ export async function generateMetadata({
 
   if (!notice) {
     return {
-      title: "공지사항을 찾을 수 없습니다",
+      title: "정보공유을 찾을 수 없습니다",
     };
   }
 
-  const description = `${notice.title} - 핀토스몰 공지사항`;
+  const description = `${notice.title} - 핀토스몰 정보공유`;
   const publishedDate = new Date(notice.createdAt).toISOString();
 
   return {
     title: notice.title,
     description,
     keywords: [
-      "핀토스 공지사항",
+      "핀토스 정보공유",
       notice.title,
       "상품권",
       "핀토스몰",
     ],
     openGraph: {
-      title: `${notice.title} | 핀토스몰 공지사항`,
+      title: `${notice.title} | 핀토스몰 정보공유`,
       description,
       url: `/notice/${slug}`,
       siteName: "핀토스몰",
@@ -48,7 +48,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${notice.title} | 핀토스몰 공지사항`,
+      title: `${notice.title} | 핀토스몰 정보공유`,
       description,
     },
   };

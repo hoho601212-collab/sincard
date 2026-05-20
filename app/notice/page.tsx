@@ -6,20 +6,20 @@ import { MainHeader, MainFooter } from "@/components/layout";
 import type { Notice } from "@/sanity/types";
 
 export const metadata: Metadata = {
-  title: "공지사항",
+  title: "정보공유",
   description:
-    "핀토스몰의 최신 소식과 공지사항을 확인하세요. 상품권 이벤트, 시스템 점검, 서비스 업데이트 등 중요한 소식을 빠르게 전달합니다.",
+    "핀토스몰의 최신 소식과 정보공유을 확인하세요. 상품권 이벤트, 시스템 점검, 서비스 업데이트 등 중요한 소식을 빠르게 전달합니다.",
   keywords: [
-    "핀토스 공지사항",
+    "핀토스 정보공유",
     "상품권 이벤트",
     "핀토스 소식",
     "시스템 점검",
     "서비스 업데이트",
   ],
   openGraph: {
-    title: "공지사항 | 핀토스몰",
+    title: "정보공유 | 핀토스몰",
     description:
-      "핀토스몰의 최신 소식과 공지사항을 확인하세요. 상품권 이벤트, 시스템 점검, 서비스 업데이트 등 중요한 소식을 빠르게 전달합니다.",
+      "핀토스몰의 최신 소식과 정보공유을 확인하세요. 상품권 이벤트, 시스템 점검, 서비스 업데이트 등 중요한 소식을 빠르게 전달합니다.",
     url: "/notice",
     siteName: "핀토스몰",
     locale: "ko_KR",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "공지사항 | 핀토스몰",
+    title: "정보공유 | 핀토스몰",
     description:
-      "핀토스몰의 최신 소식과 공지사항을 확인하세요.",
+      "핀토스몰의 최신 소식과 정보공유을 확인하세요.",
   },
 };
 
@@ -74,7 +74,7 @@ export default async function NoticePage({
                 NOTICE
               </p>
               <h1 className="text-[24px] md:text-[32px] lg:text-[40px] font-bold text-[#212121]">
-                공지사항
+                정보공유
               </h1>
             </div>
           </div>
@@ -123,7 +123,7 @@ export default async function NoticePage({
           ) : (
             <div className="text-center py-12 md:py-16 lg:py-20">
               <p className="text-[#9E9E9E] text-[14px] md:text-[16px] lg:text-[18px]">
-                등록된 공지사항이 없습니다.
+                등록된 정보공유이 없습니다.
               </p>
             </div>
           )}

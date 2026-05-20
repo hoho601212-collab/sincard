@@ -27,7 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
   navItems = [
     { label: '고객센터', href: '/#notice', active: false },
     { label: '회사소개', href: '/about', active: false },
-    { label: '공지사항', href: '/faq', active: false },
+    { label: '정보공유', href: '/faq', active: false },
     { label: '자주 묻는 질문', href: '/notice', active: false },
   ],
   logoWidth = 142,

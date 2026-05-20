@@ -21,7 +21,7 @@ function IconCard() {
   );
 }
 
-// 공지사항 아이콘
+// 정보공유 아이콘
 function IconNotice() {
   return (
     <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -179,7 +179,7 @@ export function FloatingNav() {
         {/* 섹션 순서대로 정렬 */}
         <NavItem icon={<IconMenu />} label="핵심 가이드" href="#products" />
 
-        <NavItem icon={<IconNotice />} label="공지사항" href="#notice" />
+        <NavItem icon={<IconNotice />} label="정보공유" href="#notice" />
         <NavItem icon={<IconFaq />} label="FAQ" href="#faq" />
         <NavItem
           icon={<IconCard />}

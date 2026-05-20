@@ -220,7 +220,7 @@ home/
 ├── HomeBanner.tsx                # Swiper 배너
 ├── HomePopularProducts.tsx       # 인기 상품 목록
 ├── HomeProductsOnSale.tsx        # 할인 상품 목록
-├── HomeAnnouncementsBoard.tsx    # 공지사항
+├── HomeAnnouncementsBoard.tsx    # 정보공유
 ├── HomeServiceInfoBox.tsx        # 서비스 안내
 └── HomeRecruitingBanner.tsx      # 채용 배너
 ```

@@ -463,7 +463,7 @@ import * as styles from './Button.css';
 
 ### 3. 고객센터/QNA
 - **제거 항목**:
-  - 공지사항
+  - 정보공유
   - FAQ
   - 1:1 문의
   - 게시판

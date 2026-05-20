@@ -20,7 +20,7 @@ export async function NoticeSection() {
         </p>
 
         <p className="text-[22px] font-black tracking-[-0.6px] text-[#0F172A] md:text-[34px]">
-          공지사항
+          정보공유
         </p>
 
         <p className="mt-3 text-[13px] leading-[1.7] text-[#64748B] md:text-[15px]">
@@ -54,7 +54,7 @@ export async function NoticeSection() {
         ) : (
           <div className="rounded-[16px] border border-dashed border-[#CBD5E1] bg-[#F8FAFC] px-4 py-5 text-center md:px-6 md:py-8">
             <span className="text-[13px] font-semibold text-[#94A3B8] md:text-[16px]">
-              등록된 공지사항이 없습니다.
+              등록된 정보공유이 없습니다.
             </span>
           </div>
         )}
@@ -65,7 +65,7 @@ export async function NoticeSection() {
           href="/notice"
           className="inline-flex items-center justify-center rounded-[14px] border border-[#0F766E] bg-[#0F766E] px-6 py-3 text-[14px] font-black text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#115E59] md:px-8 md:py-4 md:text-[17px]"
         >
-          공지사항 전체 보기
+          정보공유 전체 보기
         </Link>
       </div>
     </div>

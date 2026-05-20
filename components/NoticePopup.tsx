@@ -82,7 +82,7 @@ export function NoticePopup() {
               className="text-center text-[15px] md:text-[18px] font-semibold mb-6"
               style={{ color: "#FF1493" }}
             >
-              홈페이지 공지사항 참고 바랍니다
+              홈페이지 정보공유 참고 바랍니다
             </p>
 
             {/* 통신사 정책 내용 */}

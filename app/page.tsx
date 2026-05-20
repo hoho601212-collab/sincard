@@ -118,13 +118,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 공지사항 FAQ */}
+      {/* 정보공유 FAQ */}
       <section
         id="notice"
         className="bg-[#F4F7FB] px-4 py-10 sm:px-8 md:px-16 lg:px-[120px] xl:px-[200px] md:py-16 lg:py-20"
       >
         <h2 className="text-[20px] font-bold text-[#1F2937] mb-4 md:text-[26px] md:mb-6">
-          공지사항 및 FAQ
+          정보공유 및 FAQ
         </h2>
 
         <div
@@ -140,7 +140,7 @@ export default function Home() {
                   </p>
 
                   <p className="text-[20px] font-bold text-[#1F2937] md:text-[32px]">
-                    공지사항
+                    정보공유
                   </p>
                 </div>
 

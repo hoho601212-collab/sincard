@@ -12,7 +12,7 @@ export interface NoticeCardProps {
 }
 
 export const NoticeCard: React.FC<NoticeCardProps> = ({
-  title = '공지사항 제목',
+  title = '정보공유 제목',
   date = '2024.01.01',
   isNew = false,
   onClick,

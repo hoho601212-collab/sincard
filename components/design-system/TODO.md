@@ -41,12 +41,12 @@
 
 ```bash
 # 작업 순서
-1. Figma에서 각 아이콘 선택 (결제내역, 공지사항, FAQ, 문의, 전체상품, TOP)
+1. Figma에서 각 아이콘 선택 (결제내역, 정보공유, FAQ, 문의, 전체상품, TOP)
 2. 우클릭 > Copy as SVG
 3. /public/icons/ 폴더 생성
 4. 각 SVG를 파일로 저장
    - card.svg (결제내역)
-   - notice.svg (공지사항)
+   - notice.svg (정보공유)
    - faq.svg
    - message.svg (문의)
    - menu.svg (전체상품)
@@ -68,7 +68,7 @@
 app/
 ├── payment/          # 결제내역
 │   └── page.tsx
-├── notice/           # 공지사항
+├── notice/           # 정보공유
 │   └── page.tsx
 ├── faq/              # FAQ
 │   └── page.tsx

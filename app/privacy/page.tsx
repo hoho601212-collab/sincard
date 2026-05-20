@@ -276,7 +276,7 @@ export default function PrivacyPage() {
               <p>
                 현 개인정보처리방침의 내용은 정부의 정책 또는 보안기술의 변경에
                 따라 내용의 추가 삭제 및 수정이 있을 시에는 홈페이지의
-                &apos;공지사항&apos;을 통해 고지할 것입니다.
+                &apos;정보공유&apos;을 통해 고지할 것입니다.
               </p>
             </section>
 

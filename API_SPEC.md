@@ -345,9 +345,9 @@ GET /api/nice/encrypted-data?purpose=signup&clientRedirectUri=https://example.co
 
 ---
 
-# 공지사항 (Notice)
+# 정보공유 (Notice)
 
-## 1. 공지사항 목록 조회 (`GET /api/notice`)
+## 1. 정보공유 목록 조회 (`GET /api/notice`)
 
 **인증**: 필요 없음
 
@@ -358,8 +358,8 @@ GET /api/nice/encrypted-data?purpose=signup&clientRedirectUri=https://example.co
   "data": [
     {
       "boardId": 1,
-      "title": "공지사항 제목",
-      "content": "공지사항 내용",
+      "title": "정보공유 제목",
+      "content": "정보공유 내용",
       "creationDate": "2025-11-21 12:00:00",
       "updateDate": "2025-11-21 12:00:00",
       "boardType": "NOTICE"
@@ -374,7 +374,7 @@ GET /api/nice/encrypted-data?purpose=signup&clientRedirectUri=https://example.co
 
 ---
 
-## 2. 공지사항 상세 조회 (`GET /api/notice/{noticeId}`)
+## 2. 정보공유 상세 조회 (`GET /api/notice/{noticeId}`)
 
 **인증**: 필요 없음
 
@@ -384,8 +384,8 @@ GET /api/nice/encrypted-data?purpose=signup&clientRedirectUri=https://example.co
   "status": "OK",
   "data": {
     "boardId": 1,
-    "title": "공지사항 제목",
-    "content": "공지사항 내용",
+    "title": "정보공유 제목",
+    "content": "정보공유 내용",
     "creationDate": "2025-11-21 12:00:00",
     "updateDate": "2025-11-21 12:00:00",
     "boardType": "NOTICE"
@@ -399,15 +399,15 @@ GET /api/nice/encrypted-data?purpose=signup&clientRedirectUri=https://example.co
 
 ---
 
-## 3. 공지사항 등록 (`POST /api/notice`)
+## 3. 정보공유 등록 (`POST /api/notice`)
 
 **인증**: ADMIN 권한 필요
 
 **Request**
 ```json
 {
-  "title": "공지사항 제목",      // 필수
-  "content": "공지사항 내용",    // 필수
+  "title": "정보공유 제목",      // 필수
+  "content": "정보공유 내용",    // 필수
   "boardType": "NOTICE"         // 필수
 }
 ```
@@ -426,7 +426,7 @@ GET /api/nice/encrypted-data?purpose=signup&clientRedirectUri=https://example.co
 
 ---
 
-## 4. 공지사항 수정 (`PATCH /api/notice/{noticeId}`)
+## 4. 정보공유 수정 (`PATCH /api/notice/{noticeId}`)
 
 **인증**: ADMIN 권한 필요
 
@@ -452,7 +452,7 @@ GET /api/nice/encrypted-data?purpose=signup&clientRedirectUri=https://example.co
 
 ---
 
-## 5. 공지사항 삭제 (`DELETE /api/notice/{noticeId}`)
+## 5. 정보공유 삭제 (`DELETE /api/notice/{noticeId}`)
 
 **인증**: ADMIN 권한 필요
 
@@ -1294,7 +1294,7 @@ OK
 ## BoardType
 | 값 | 설명 |
 |----|------|
-| NOTICE | 공지사항 |
+| NOTICE | 정보공유 |
 | QNA | Q&A |
 
 ## OrderStatus

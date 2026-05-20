@@ -236,7 +236,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     key: string;
   }> = [
     { icon: 'card', label: '결제내역', key: 'payment' },
-    { icon: 'notice', label: '공지사항', key: 'notice' },
+    { icon: 'notice', label: '정보공유', key: 'notice' },
     { icon: 'faq', label: 'FAQ', key: 'faq' },
     { icon: 'message', label: '문의', key: 'inquiry' },
     { icon: 'menu', label: '전체 상품', key: 'products' },

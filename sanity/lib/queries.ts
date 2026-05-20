@@ -1,4 +1,4 @@
-// 공지사항 - 최신 N개
+// 정보공유 - 최신 N개
 export const noticesQuery = (limit: number = 5) => `
   *[_type == "notice" && isPublished == true] | order(createdAt desc) [0...${limit}] {
     _id,
@@ -8,7 +8,7 @@ export const noticesQuery = (limit: number = 5) => `
   }
 `;
 
-// 공지사항 - 전체 목록 (페이지네이션)
+// 정보공유 - 전체 목록 (페이지네이션)
 export const noticesListQuery = (start: number, end: number) => `
   *[_type == "notice" && isPublished == true] | order(createdAt desc) [${start}...${end}] {
     _id,
@@ -18,12 +18,12 @@ export const noticesListQuery = (start: number, end: number) => `
   }
 `;
 
-// 공지사항 - 전체 개수
+// 정보공유 - 전체 개수
 export const noticesCountQuery = `
   count(*[_type == "notice" && isPublished == true])
 `;
 
-// 공지사항 - 상세
+// 정보공유 - 상세
 export const noticeBySlugQuery = `
   *[_type == "notice" && slug.current == $slug && isPublished == true][0] {
     _id,

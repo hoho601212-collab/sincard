@@ -2,7 +2,7 @@ import { defineField, defineType } from "sanity";
 
 export default defineType({
   name: "notice",
-  title: "공지사항",
+  title: "정보공유",
   type: "document",
   fields: [
     defineField({

@@ -1,8 +1,8 @@
-# Sanity + Next.js 공지사항/FAQ 게시판 구현 가이드
+# Sanity + Next.js 정보공유/FAQ 게시판 구현 가이드
 
 ## 프로젝트 개요
 
-비개발자 관리자가 쉽게 콘텐츠를 관리할 수 있는 공지사항/FAQ 게시판 시스템
+비개발자 관리자가 쉽게 콘텐츠를 관리할 수 있는 정보공유/FAQ 게시판 시스템
 
 ### 요구사항
 
@@ -29,7 +29,7 @@
 ```
 [메인페이지] /
     │
-    ├── 공지사항 최신 5개 표시
+    ├── 정보공유 최신 5개 표시
     │       └── "더보기" 클릭 → [목록] /notice
     │                               └── 항목 클릭 → [상세] /notice/[slug]
     │
@@ -37,7 +37,7 @@
             └── "더보기" 클릭 → [목록] /faq (아코디언)
 
 [관리자 페이지] /studio
-    ├── 공지사항 CRUD
+    ├── 정보공유 CRUD
     └── FAQ CRUD
 ```
 
@@ -48,11 +48,11 @@
 ```
 project-root/
 ├── app/
-│   ├── page.tsx                    # 메인 (공지사항/FAQ 미리보기)
+│   ├── page.tsx                    # 메인 (정보공유/FAQ 미리보기)
 │   ├── notice/
-│   │   ├── page.tsx                # 공지사항 목록
+│   │   ├── page.tsx                # 정보공유 목록
 │   │   └── [slug]/
-│   │       └── page.tsx            # 공지사항 상세
+│   │       └── page.tsx            # 정보공유 상세
 │   ├── faq/
 │   │   └── page.tsx                # FAQ 목록 (아코디언)
 │   └── studio/
@@ -61,7 +61,7 @@ project-root/
 ├── sanity/
 │   ├── schemas/
 │   │   ├── index.ts
-│   │   ├── notice.ts               # 공지사항 스키마
+│   │   ├── notice.ts               # 정보공유 스키마
 │   │   └── faq.ts                  # FAQ 스키마
 │   ├── lib/
 │   │   ├── client.ts               # Sanity 클라이언트
@@ -121,7 +121,7 @@ export default defineConfig({
 
 ## 2단계: 스키마 정의
 
-### 2.1 공지사항 스키마
+### 2.1 정보공유 스키마
 
 ```ts
 // sanity/schemas/notice.ts
@@ -129,7 +129,7 @@ import { defineField, defineType } from "sanity";
 
 export default defineType({
   name: "notice",
-  title: "공지사항",
+  title: "정보공유",
   type: "document",
   fields: [
     defineField({
@@ -393,7 +393,7 @@ export function urlFor(source: any) {
 ```ts
 // sanity/lib/queries.ts
 
-// 공지사항 - 최신 N개
+// 정보공유 - 최신 N개
 export const noticesQuery = (limit: number = 5) => `
   *[_type == "notice" && isPublished == true] | order(createdAt desc) [0...${limit}] {
     _id,
@@ -403,7 +403,7 @@ export const noticesQuery = (limit: number = 5) => `
   }
 `;
 
-// 공지사항 - 전체 목록 (페이지네이션)
+// 정보공유 - 전체 목록 (페이지네이션)
 export const noticesListQuery = (start: number, end: number) => `
   *[_type == "notice" && isPublished == true] | order(createdAt desc) [${start}...${end}] {
     _id,
@@ -413,12 +413,12 @@ export const noticesListQuery = (start: number, end: number) => `
   }
 `;
 
-// 공지사항 - 전체 개수
+// 정보공유 - 전체 개수
 export const noticesCountQuery = `
   count(*[_type == "notice" && isPublished == true])
 `;
 
-// 공지사항 - 상세
+// 정보공유 - 상세
 export const noticeBySlugQuery = `
   *[_type == "notice" && slug.current == $slug && isPublished == true][0] {
     _id,
@@ -553,10 +553,10 @@ export default async function HomePage() {
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      {/* 공지사항 섹션 */}
+      {/* 정보공유 섹션 */}
       <section className="mb-12">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-2xl font-bold">공지사항</h2>
+          <h2 className="text-2xl font-bold">정보공유</h2>
           <Link href="/notice" className="text-blue-600 hover:underline">
             더보기 →
           </Link>
@@ -599,7 +599,7 @@ export default async function HomePage() {
 }
 ```
 
-### 5.3 공지사항 목록 페이지
+### 5.3 정보공유 목록 페이지
 
 ```tsx
 // app/notice/page.tsx
@@ -629,7 +629,7 @@ export default async function NoticePage({
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">공지사항</h1>
+      <h1 className="text-3xl font-bold mb-8">정보공유</h1>
 
       <ul className="space-y-3 mb-8">
         {notices.map((notice: any) => (
@@ -668,7 +668,7 @@ export default async function NoticePage({
 }
 ```
 
-### 5.4 공지사항 상세 페이지
+### 5.4 정보공유 상세 페이지
 
 ```tsx
 // app/notice/[slug]/page.tsx
@@ -836,9 +836,9 @@ npx sanity deploy
 1. 브라우저에서 `https://your-domain.com/studio` 접속
 2. Sanity 계정으로 로그인
 
-### 공지사항 작성
+### 정보공유 작성
 
-1. 좌측 메뉴에서 "공지사항" 클릭
+1. 좌측 메뉴에서 "정보공유" 클릭
 2. 우측 상단 "+" 버튼 클릭
 3. 제목 입력
 4. "Generate" 버튼으로 URL 슬러그 자동 생성
