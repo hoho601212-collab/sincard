@@ -15,12 +15,8 @@ export const metadata: Metadata = {
     template: "%s | 신카머니존",
   },
   description:
-    "신카머니존 에서 신용카드 현금화 핵심 가이드를 통해서 안전하게 이용하는 방법에 대해서 알아보세요 5분 내 입금, 무이자 할부 가능",
-  keywords: [
-  "신용카드 현금화",
-  "신카 머니존",
-  
-  ],
+    "신카머니존에서 신용카드 현금화 구조와 이용 전 확인해야 할 핵심 기준을 안내합니다.",
+  keywords: ["신용카드 현금화", "신카 머니존"],
   authors: [{ name: "신카 머니존" }],
   creator: "신카 머니존",
   publisher: "신카 머니존",
@@ -32,17 +28,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://pintoss.co.kr",
   },
-  
-  verification: {
-    google: "",
-    other: {
-      "",
-    },
-  },
   openGraph: {
     title: "신카머니존 | 신용카드 현금화 핵심 가이드",
     description:
-      "신카머니존 에서 신용카드 현금화 핵심 가이드를 통해서 안전하게 이용하는 방법에 대해서 알아보세요 5분 내 입금, 무이자 할부 가능",
+      "신카머니존에서 신용카드 현금화 구조와 이용 전 확인해야 할 핵심 기준을 안내합니다.",
     url: "https://pintoss.co.kr",
     siteName: "신카 머니존",
     images: [
@@ -60,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "신카머니존 | 신용카드 현금화 핵심 가이드",
     description:
-      "신카머니존 에서 신용카드 현금화 핵심 가이드를 통해서 안전하게 이용하는 방법에 대해서 알아보세요 5분 내 입금, 무이자 할부 가능",
+      "신카머니존에서 신용카드 현금화 구조와 이용 전 확인해야 할 핵심 기준을 안내합니다.",
     images: ["https://pintoss.co.kr/og-image.png"],
   },
   robots: {
@@ -87,7 +76,6 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
-        {/* Hero 이미지 preload (LCP 최적화) */}
         <link
           rel="preload"
           as="image"
@@ -98,6 +86,7 @@ export default function RootLayout({
         <OrganizationJsonLd />
         <WebSiteJsonLd />
       </head>
+
       <body className={`${pretendard.variable}`}>
         <div className="flex min-h-screen flex-col">
           <QueryProvider>
