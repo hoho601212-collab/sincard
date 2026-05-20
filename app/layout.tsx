@@ -9,7 +9,7 @@ import { pretendard } from "../lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pintoss.co.kr"),
+  metadataBase: new URL("https://sinyongkadeu.com"),
   title: {
     default: "신카머니존 | 신용카드 현금화 핵심 가이드",
     template: "%s | 신카머니존",
@@ -26,17 +26,17 @@ export const metadata: Metadata = {
     telephone: false,
   },
   alternates: {
-    canonical: "https://pintoss.co.kr",
+    canonical: "https://sinyongkadeu.com",
   },
   openGraph: {
     title: "신카머니존 | 신용카드 현금화 핵심 가이드",
     description:
       "신카머니존에서 신용카드 현금화 구조와 이용 전 확인해야 할 핵심 기준을 안내합니다.",
-    url: "https://pintoss.co.kr",
+    url: "https://sinyongkadeu.com",
     siteName: "신카 머니존",
     images: [
       {
-        url: "https://pintoss.co.kr/og-image.png",
+        url: "https://sinyongkadeu.com/og-image.png",
         width: 1200,
         height: 630,
         alt: "신카머니존 | 신용카드 현금화 핵심 가이드",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     title: "신카머니존 | 신용카드 현금화 핵심 가이드",
     description:
       "신카머니존에서 신용카드 현금화 구조와 이용 전 확인해야 할 핵심 기준을 안내합니다.",
-    images: ["https://pintoss.co.kr/og-image.png"],
+    images: ["https://sinyongkadeu.com/og-image.png"],
   },
   robots: {
     index: true,

@@ -4,7 +4,7 @@ export function OrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "신카 머니존몰",
-    alternateName: "PinToss Mall",
+    alternateName: "sinyongkadeu Mall",
     url: "https://sinyongkadeu.co.kr",
     logo: "https://sinyongkadeu.co.kr/logo.png",
     description:
@@ -52,7 +52,7 @@ export function WebSiteJsonLd() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "신카 머니존몰",
-    alternateName: "PinToss Mall",
+    alternateName: "sinyongkadeu Mall",
     url: "https://sinyongkadeu.co.kr",
     description:
       "핸드폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",

@@ -99,7 +99,7 @@ export const Header: React.FC<HeaderProps> = ({
         <Link href={logoHref} className="shrink-0 relative">
           <Image
             src={logoSrc}
-            alt="pintoss logo"
+            alt="sinyongkadeu logo"
             width={logoWidth}
             height={logoHeight}
             className="block w-[100px] h-[28px] md:w-[142px] md:h-[40px]"

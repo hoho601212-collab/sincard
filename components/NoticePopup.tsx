@@ -55,7 +55,7 @@ export function NoticePopup() {
             <div className="flex justify-center mb-4">
               <Image
                 src="/logo.png"
-                alt="pintoss"
+                alt="sinyongkadeu"
                 width={142}
                 height={40}
                 className="w-[100px] h-[28px] md:w-[142px] md:h-[40px]"

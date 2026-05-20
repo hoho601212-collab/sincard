@@ -121,7 +121,7 @@ export default async function ProductDetailPage({
             name={product.name}
             description={cleanDescription || `${product.name} - 신카 머니존몰에서 간편하게 구매하세요`}
             image={product.imageUrl}
-            sku={`PINTOSS-${product.id}`}
+            sku={`sinyongkadeu-${product.id}`}
             brand={product.publisher || '신카 머니존몰'}
             url={`https://sinyongkadeu.com/product/${product.id}`}
             lowPrice={lowPrice}

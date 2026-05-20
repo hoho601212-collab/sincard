@@ -10,11 +10,11 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: 'https',
-        hostname: 'bucket-pintoss.s3.ap-northeast-2.amazonaws.com',
+        hostname: 'bucket-sinyongkadeu.s3.ap-northeast-2.amazonaws.com',
       },
       {
         protocol: 'https',
-        hostname: 'pintoss-bucket.s3.ap-northeast-2.amazonaws.com',
+        hostname: 'sinyongkadeu-bucket.s3.ap-northeast-2.amazonaws.com',
       },
     ],
   },

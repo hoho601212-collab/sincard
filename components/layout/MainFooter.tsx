@@ -17,7 +17,7 @@ export function MainFooter() {
 
               <div>
                 <p className="text-[20px] font-black tracking-[-0.5px] text-[#0F172A]">
-                  PINTOSS GUIDE
+                  sinyongkadeu GUIDE
                 </p>
                 <p className="text-[12px] text-[#64748B]">
                   Information & Support Center
@@ -125,7 +125,7 @@ export function MainFooter() {
         <div className="flex flex-col gap-4 border-t border-[#DCE6F2] pt-5 md:flex-row md:items-center md:justify-between">
 
           <p className="text-[11px] tracking-[0.2px] text-[#94A3B8] md:text-[12px]">
-            Copyright © 2026 PINTOSS GUIDE. All rights reserved.
+            Copyright © 2026 sinyongkadeu GUIDE. All rights reserved.
           </p>
 
           <div className="flex items-center gap-3 rounded-full border border-[#DCE6F2] bg-white px-4 py-2 shadow-sm">
