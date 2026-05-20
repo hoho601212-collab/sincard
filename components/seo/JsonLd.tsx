@@ -3,7 +3,7 @@ export function OrganizationJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: "핀토스몰",
+    name: "신카 머니존몰",
     alternateName: "PinToss Mall",
     url: "https://pin-toss.co.kr",
     logo: "https://pin-toss.co.kr/logo.png",
@@ -51,14 +51,14 @@ export function WebSiteJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "핀토스몰",
+    name: "신카 머니존몰",
     alternateName: "PinToss Mall",
     url: "https://pin-toss.co.kr",
     description:
       "핸드폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
     publisher: {
       "@type": "Organization",
-      name: "핀토스mall",
+      name: "신카 머니존mall",
     },
     inLanguage: "ko-KR",
   };
@@ -94,7 +94,7 @@ export function ProductJsonLd({
   description,
   image,
   sku,
-  brand = "핀토스몰",
+  brand = "신카 머니존몰",
   url,
   price,
   lowPrice,
@@ -120,7 +120,7 @@ export function ProductJsonLd({
         availability: "https://schema.org/InStock",
         seller: {
           "@type": "Organization",
-          name: "핀토스몰",
+          name: "신카 머니존몰",
         },
       }
     : {
@@ -132,7 +132,7 @@ export function ProductJsonLd({
         availability: "https://schema.org/InStock",
         seller: {
           "@type": "Organization",
-          name: "핀토스몰",
+          name: "신카 머니존몰",
         },
       };
 
@@ -218,7 +218,7 @@ export function LocalBusinessJsonLd() {
     "@context": "https://schema.org",
     "@type": "Store",
     "@id": "https://pin-toss.co.kr/#organization",
-    name: "핀토스몰",
+    name: "신카 머니존몰",
     url: "https://pin-toss.co.kr",
     image: "https://pin-toss.co.kr/logo.png",
     description:

@@ -15,7 +15,7 @@ export interface VendorInfoProps {
 }
 
 const defaultItems: VendorInfoItem[] = [
-  { label: '발행업체', value: '(주)핀토스' },
+  { label: '발행업체', value: '(주)신카 머니존' },
   { label: '홈페이지', value: 'www.pintoss.com', href: 'https://www.pintoss.com' },
   { label: '고객센터', value: '1234-5678' },
 ];

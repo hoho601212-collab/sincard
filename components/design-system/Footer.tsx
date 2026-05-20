@@ -13,14 +13,14 @@ export function Footer({ className = "" }: FooterProps) {
           <div className="w-[100px] h-8 md:w-[142px] md:h-10">
             <img
               src="/logo.png"
-              alt="핀토스"
+              alt="신카 머니존"
               className="w-full h-full object-contain"
             />
           </div>
           <div className="flex flex-col gap-2 text-[11px] text-[#424242] leading-[1.5] md:gap-4 md:text-[16px]">
             <p>
-              상호: 핀토스 l 주소: (47190) 부산광역시 부산진구 당감로17, 7동
-              906호(당감동) l 대표 조문국
+              상호: 신카 머니존 l 주소: (47190) 부산광역시 부산진구 당감로17, 7동
+              906호(당감동) l 대표 최진택
             </p>
             <p>
               사업자등록번호: 590-95-01527 l 통신판매번호 2024-부산진-1016 l
@@ -28,10 +28,10 @@ export function Footer({ className = "" }: FooterProps) {
             </p>
             <p className="hidden md:block">
               고객센터 주소 : 부산광역시 부산진구 당감로17, 7동 906호(당감동) l
-              핀토스 고객센터 Tel: 010-9300-4202
+              신카 머니존 고객센터 Tel: 010-9300-4202
             </p>
             <p className="hidden md:block">
-              민원담당자: 조문국 l 연락처: 010-9300-4202
+              민원담당자: 최진택 l 연락처: 010-9300-4202
             </p>
           
           </div>
@@ -55,7 +55,7 @@ export function Footer({ className = "" }: FooterProps) {
 
           {/* Copyright */}
           <p className="text-[11px] text-[#BDBDBD] md:text-[16px]">
-            Copyright © 핀토스 All rights reserved.
+            Copyright © 신카 머니존 All rights reserved.
           </p>
         </div>
 

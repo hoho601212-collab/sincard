@@ -18,13 +18,13 @@ export default function PrivacyPage() {
 
           <div className="prose prose-gray max-w-none text-sm leading-relaxed text-gray-700 md:text-base">
             <p className="mb-6 text-gray-600">
-              핀토스은(는) 이용자들의 개인정보보호를 매우 중요시하며, 이용자가
+              신카 머니존은(는) 이용자들의 개인정보보호를 매우 중요시하며, 이용자가
               회사의 서비스를 이용함과 동시에 온라인상에서 회사에 제공한
               개인정보가 보호 받을 수 있도록 최선을 다하고 있습니다.
             </p>
 
             <p className="mb-6 text-gray-600">
-              이에 핀토스몰는 통신비밀보호법, 전기통신사업법, 정보통신망
+              이에 신카 머니존몰는 통신비밀보호법, 전기통신사업법, 정보통신망
               이용촉진 및 정보보호 등에 관한 법률 등 정보통신서비스제공자가
               준수하여야 할 관련 법규상의 개인정보보호 규정 및 정보통신부가
               제정한 개인정보보호지침을 준수하고 있습니다.
@@ -59,7 +59,7 @@ export default function PrivacyPage() {
                 1. 개인정보 수집에 대한 동의
               </h2>
               <p>
-                핀토스몰는 이용자들이 회사의 개인정보 처리방침 또는 이용약관의
+                신카 머니존몰는 이용자들이 회사의 개인정보 처리방침 또는 이용약관의
                 내용에 대하여 「동의」버튼 또는 「취소」버튼을 클릭할 수 있는
                 절차를 마련하여, 「동의」버튼을 클릭하면 개인정보 수집에 대해
                 동의한 것으로 봅니다.
@@ -76,7 +76,7 @@ export default function PrivacyPage() {
                 수 있는 정보를 말합니다.
               </p>
               <p className="mb-4">
-                핀토스몰는 이용자의 사전 동의 없이는 이용자의 개인 정보를
+                신카 머니존몰는 이용자의 사전 동의 없이는 이용자의 개인 정보를
                 공개하지 않으며, 수집된 정보는 아래와 같이 이용하고 있습니다.
               </p>
               <ul className="list-disc space-y-2 pl-5">
@@ -109,7 +109,7 @@ export default function PrivacyPage() {
                 3. 수집하는 개인정보 항목 및 수집방법
               </h2>
               <p className="mb-4">
-                핀토스몰는 이용자들이 회원서비스를 이용하기 위해 회원으로
+                신카 머니존몰는 이용자들이 회원서비스를 이용하기 위해 회원으로
                 가입하실 때 서비스 제공을 위한 필수적인 정보들을 온라인상에서
                 입력 받고 있습니다.
               </p>
@@ -131,7 +131,7 @@ export default function PrivacyPage() {
               </h2>
               <p className="mb-4">
                 이용자가 쇼핑몰 회원으로서 회사에 제공하는 서비스를 이용하는
-                동안 핀토스몰는 이용자들의 개인정보를 계속적으로 보유하며 서비스
+                동안 신카 머니존몰는 이용자들의 개인정보를 계속적으로 보유하며 서비스
                 제공 등을 위해 이용합니다.
               </p>
               <p className="mb-4">
@@ -162,7 +162,7 @@ export default function PrivacyPage() {
                 5. 수집한 개인정보의 공유 및 제공
               </h2>
               <p className="mb-4">
-                핀토스몰는 이용자들의 개인정보를 &quot;2. 개인정보의 수집목적 및
+                신카 머니존몰는 이용자들의 개인정보를 &quot;2. 개인정보의 수집목적 및
                 이용목적&quot;에서 고지한 범위 내에서 사용하며, 이용자의 사전
                 동의 없이는 동 범위를 초과하여 이용하거나 원칙적으로 이용자의
                 개인정보를 외부에 공개하지 않습니다.
@@ -242,13 +242,13 @@ export default function PrivacyPage() {
               <div className="rounded-lg bg-gray-50 p-4">
                 <ul className="space-y-2 text-sm">
                   <li>
-                    <strong>이름:</strong> 조문국
+                    <strong>이름:</strong> 최진택
                   </li>
                   <li>
                     <strong>소속/직위:</strong> 대표
                   </li>
                   <li>
-                    <strong>E-MAIL:</strong> c0810@naver.com
+                    <strong>E-MAIL:</strong> cs@sinyongkadeu.com
                   </li>
                   <li>
                     <strong>전화번호:</strong> 010-9300-4202
@@ -262,8 +262,8 @@ export default function PrivacyPage() {
                 12. 아동의 개인정보보호
               </h2>
               <p>
-                핀토스몰는 온라인 환경에서 만 14세 미만 어린이의 개인정보를
-                보호하는 것 역시 중요한 일이라고 생각하고 있습니다. 핀토스몰는
+                신카 머니존몰는 온라인 환경에서 만 14세 미만 어린이의 개인정보를
+                보호하는 것 역시 중요한 일이라고 생각하고 있습니다. 신카 머니존몰는
                 만 14세 미만의 어린이들은 법정대리인의 동의가 없는 한 회원으로
                 가입할 수 없게 하고 있습니다.
               </p>

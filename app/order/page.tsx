@@ -268,7 +268,7 @@ function OrderPageContent() {
       <div className="mt-3 flex flex-col sm:flex-row sm:items-center gap-3">
         <p className="text-sm text-[#424242]">
           상품권 판매를 원하시나요?
-          <span className="font-semibold text-[#1976d2]"> 핀토스몰 공식 매입처</span>
+          <span className="font-semibold text-[#1976d2]"> 신카 머니존몰 공식 매입처</span>
         </p>
 
         <a

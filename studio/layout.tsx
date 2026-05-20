@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "핀토스 관리자 페이지",
+  title: "신카 머니존 관리자 페이지",
   robots: {
     index: false,
     follow: false,

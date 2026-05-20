@@ -4,7 +4,7 @@ import { schemaTypes } from "./sanity/schemas";
 
 export default defineConfig({
   name: "default",
-  title: "핀토스 관리자",
+  title: "신카 머니존 관리자",
 
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID!,
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET!,

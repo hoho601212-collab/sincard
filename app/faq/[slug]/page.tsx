@@ -34,28 +34,28 @@ export async function generateMetadata({
     };
   }
 
-  const description = `${faq.question} - 핀토스몰 자주 묻는 질문`;
+  const description = `${faq.question} - 신카 머니존몰 자주 묻는 질문`;
 
   return {
     title: faq.question,
     description,
     keywords: [
-      "핀토스 FAQ",
+      "신카 머니존 FAQ",
       faq.question,
       "상품권",
-      "핀토스몰",
+      "신카 머니존몰",
     ],
     openGraph: {
-      title: `${faq.question} | 핀토스몰 FAQ`,
+      title: `${faq.question} | 신카 머니존몰 FAQ`,
       description,
       url: `/faq/${slug}`,
-      siteName: "핀토스몰",
+      siteName: "신카 머니존몰",
       locale: "ko_KR",
       type: "article",
     },
     twitter: {
       card: "summary",
-      title: `${faq.question} | 핀토스몰 FAQ`,
+      title: `${faq.question} | 신카 머니존몰 FAQ`,
       description,
     },
   };

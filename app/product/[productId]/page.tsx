@@ -46,7 +46,7 @@ export async function generateMetadata({
 
   if (isNaN(productIdNumber)) {
     return {
-      title: '상품을 찾을 수 없습니다 | 핀토스',
+      title: '상품을 찾을 수 없습니다 | 신카 머니존',
     };
   }
 
@@ -54,7 +54,7 @@ export async function generateMetadata({
 
   if (!product) {
     return {
-      title: '상품을 찾을 수 없습니다 | 핀토스',
+      title: '상품을 찾을 수 없습니다 | 신카 머니존',
     };
   }
 
@@ -64,20 +64,20 @@ export async function generateMetadata({
     .substring(0, 160);
 
   return {
-    title: `${product.name} | 핀토스`,
-    description: cleanDescription || `${product.name} - 핀토스에서 간편하게 구매하세요`,
+    title: `${product.name} | 신카 머니존`,
+    description: cleanDescription || `${product.name} - 신카 머니존에서 간편하게 구매하세요`,
     openGraph: {
-      title: `${product.name} | 핀토스`,
-      description: cleanDescription || `${product.name} - 핀토스에서 간편하게 구매하세요`,
+      title: `${product.name} | 신카 머니존`,
+      description: cleanDescription || `${product.name} - 신카 머니존에서 간편하게 구매하세요`,
       images: product.imageUrl ? [{ url: product.imageUrl, alt: product.name }] : [],
       type: 'website',
-      siteName: '핀토스',
+      siteName: '신카 머니존',
       locale: 'ko_KR',
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${product.name} | 핀토스`,
-      description: cleanDescription || `${product.name} - 핀토스에서 간편하게 구매하세요`,
+      title: `${product.name} | 신카 머니존`,
+      description: cleanDescription || `${product.name} - 신카 머니존에서 간편하게 구매하세요`,
       images: product.imageUrl ? [product.imageUrl] : [],
     },
   };
@@ -119,10 +119,10 @@ export default async function ProductDetailPage({
         <>
           <ProductJsonLd
             name={product.name}
-            description={cleanDescription || `${product.name} - 핀토스몰에서 간편하게 구매하세요`}
+            description={cleanDescription || `${product.name} - 신카 머니존몰에서 간편하게 구매하세요`}
             image={product.imageUrl}
             sku={`PINTOSS-${product.id}`}
-            brand={product.publisher || '핀토스몰'}
+            brand={product.publisher || '신카 머니존몰'}
             url={`https://pin-toss.com/product/${product.id}`}
             lowPrice={lowPrice}
             highPrice={highPrice}

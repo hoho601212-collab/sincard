@@ -24,31 +24,31 @@ export async function generateMetadata({
     };
   }
 
-  const description = `${notice.title} - 핀토스몰 정보공유`;
+  const description = `${notice.title} - 신카 머니존몰 정보공유`;
   const publishedDate = new Date(notice.createdAt).toISOString();
 
   return {
     title: notice.title,
     description,
     keywords: [
-      "핀토스 정보공유",
+      "신카 머니존 정보공유",
       notice.title,
       "상품권",
-      "핀토스몰",
+      "신카 머니존몰",
     ],
     openGraph: {
-      title: `${notice.title} | 핀토스몰 정보공유`,
+      title: `${notice.title} | 신카 머니존몰 정보공유`,
       description,
       url: `/notice/${slug}`,
-      siteName: "핀토스몰",
+      siteName: "신카 머니존몰",
       locale: "ko_KR",
       type: "article",
       publishedTime: publishedDate,
-      authors: ["핀토스몰"],
+      authors: ["신카 머니존몰"],
     },
     twitter: {
       card: "summary_large_image",
-      title: `${notice.title} | 핀토스몰 정보공유`,
+      title: `${notice.title} | 신카 머니존몰 정보공유`,
       description,
     },
   };

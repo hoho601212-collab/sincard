@@ -51,7 +51,7 @@ export function NoticePopup() {
         <div className="relative w-full">
           {/* 팝업 내용 */}
           <div className="bg-gradient-to-b from-[#E8F4FF] to-white p-6 md:p-8">
-            {/* 핀토스 로고 */}
+            {/* 신카 머니존 로고 */}
             <div className="flex justify-center mb-4">
               <Image
                 src="/logo.png"
