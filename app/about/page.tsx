@@ -1,6 +1,9 @@
 import { MainHeader, MainFooter } from "@/components/layout";
 export default function AboutPage() {
   return (
+  <>
+    <MainHeader />
+
     <main className="bg-[#F6F8FC]">
       <section className="mx-auto max-w-[1180px] px-4 py-16 md:py-24">
         <div className="mb-10 text-center">
@@ -158,5 +161,8 @@ export default function AboutPage() {
         </div>
       </section>
     </main>
-  );
+
+    <MainFooter />
+  </>
+);
 }
