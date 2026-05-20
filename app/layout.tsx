@@ -79,7 +79,7 @@ export default function RootLayout({
         <link
           rel="preload"
           as="image"
-          href="/Group 14.png"
+          href="/gift_card.png"
           type="image/png"
           fetchPriority="high"
         />
