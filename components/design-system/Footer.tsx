@@ -24,7 +24,7 @@ export function Footer({ className = "" }: FooterProps) {
             </p>
             <p>
               사업자등록번호: 590-95-01527 l 통신판매번호 2024-부산진-1016 l
-              Email : admin@pin-toss.com
+              Email : admin@sinyongkadeu.com
             </p>
             <p className="hidden md:block">
               고객센터 주소 : 부산광역시 부산진구 당감로17, 7동 906호(당감동) l
@@ -39,7 +39,7 @@ export function Footer({ className = "" }: FooterProps) {
           {/* 버튼들 */}
           <div className="flex flex-col gap-3 md:flex-row md:gap-4">
             <button className="bg-[#0565FF] text-white px-4 py-2.5 rounded-[10px] text-[12px] font-semibold md:px-8 md:py-3 md:text-[18px]">
-              대량구매/제휴문의 : admin@pin-toss.com
+              대량구매/제휴문의 : admin@sinyongkadeu.com
             </button>
             <div className="bg-[#FFFADA] flex items-center gap-2 px-4 py-2.5 rounded-[10px] md:gap-3 md:px-6 md:py-3">
               <img

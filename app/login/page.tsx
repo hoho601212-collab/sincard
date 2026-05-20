@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 
-const MAIN_SITE = "https://www.pin-toss.com";
+const MAIN_SITE = "https://www.sinyongkadeu.com";
 
 export default function LoginPage() {
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function LoginPage() {
           로그인 페이지로 이동 중입니다
         </p>
         <p className="text-[14px] text-[#757575]">
-          잠시 후 pin-toss.com 로그인 화면으로 이동합니다.
+          잠시 후 sinyongkadeu.com 로그인 화면으로 이동합니다.
         </p>
       </div>
     </div>

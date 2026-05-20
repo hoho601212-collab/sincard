@@ -2,7 +2,7 @@
 
 실제로 사용 중인 API 엔드포인트 전체 목록입니다.
 
-**Base URL:** `https://pin-toss.com`
+**Base URL:** `https://sinyongkadeu.com`
 
 ---
 

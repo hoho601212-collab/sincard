@@ -19,6 +19,6 @@ export default function robots(): MetadataRoute.Robots {
         ],
       },
     ],
-    sitemap: 'https://pin-toss.com/sitemap.xml',
+    sitemap: 'https://sinyongkadeu.com/sitemap.xml',
   };
 }

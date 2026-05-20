@@ -123,16 +123,16 @@ export default async function ProductDetailPage({
             image={product.imageUrl}
             sku={`PINTOSS-${product.id}`}
             brand={product.publisher || '신카 머니존몰'}
-            url={`https://pin-toss.com/product/${product.id}`}
+            url={`https://sinyongkadeu.com/product/${product.id}`}
             lowPrice={lowPrice}
             highPrice={highPrice}
             offerCount={offerCount}
           />
           <BreadcrumbJsonLd
             items={[
-              { name: '홈', url: 'https://pin-toss.com' },
-              { name: '상품', url: 'https://pin-toss.com/#products' },
-              { name: product.name, url: `https://pin-toss.com/product/${product.id}` },
+              { name: '홈', url: 'https://sinyongkadeu.com' },
+              { name: '상품', url: 'https://sinyongkadeu.com/#products' },
+              { name: product.name, url: `https://sinyongkadeu.com/product/${product.id}` },
             ]}
           />
         </>

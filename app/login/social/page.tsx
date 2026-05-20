@@ -14,14 +14,14 @@ function SocialLoginRedirectContent() {
     const accessToken = searchParams.get('accessToken');
     const oauthSignupUuid = searchParams.get('oauthSignupUuid');
 
-    // ❌ 로그인 실패 → pin-toss 로그인으로 이동
+    // ❌ 로그인 실패 → sinyongkadeu 로그인으로 이동
     if (!isSuccess) {
       toast.error('로그인에 실패했습니다. 다시 시도해주세요.');
-      window.location.href = 'https://www.pin-toss.com/login';
+      window.location.href = 'https://www.sinyongkadeu.com/login';
       return;
     }
 
-    // ✅ 기존 회원 → 토큰 저장 후 pin-toss 메인으로 이동
+    // ✅ 기존 회원 → 토큰 저장 후 sinyongkadeu 메인으로 이동
     if (accessToken) {
       setAuth(accessToken);
       toast.success('로그인 성공!');
@@ -29,21 +29,21 @@ function SocialLoginRedirectContent() {
       const returnUrl = sessionStorage.getItem('returnUrl') || '/';
       sessionStorage.removeItem('returnUrl');
 
-      window.location.href = `https://www.pin-toss.com${returnUrl}`;
+      window.location.href = `https://www.sinyongkadeu.com${returnUrl}`;
       return;
     }
 
-    // 🆕 신규 회원 → pin-toss 회원가입으로 이동
+    // 🆕 신규 회원 → sinyongkadeu 회원가입으로 이동
     if (oauthSignupUuid) {
       toast.info('회원가입이 필요합니다.');
 
-      window.location.href = `https://www.pin-toss.com/signup/oauth?oauthSignupUuid=${oauthSignupUuid}`;
+      window.location.href = `https://www.sinyongkadeu.com/signup/oauth?oauthSignupUuid=${oauthSignupUuid}`;
       return;
     }
 
     // ❌ 예외 상황
     toast.error('로그인 정보를 받을 수 없습니다.');
-    window.location.href = 'https://www.pin-toss.com/login';
+    window.location.href = 'https://www.sinyongkadeu.com/login';
 
   }, [searchParams, setAuth]);
 

@@ -5,8 +5,8 @@ export function OrganizationJsonLd() {
     "@type": "Organization",
     name: "신카 머니존몰",
     alternateName: "PinToss Mall",
-    url: "https://pin-toss.co.kr",
-    logo: "https://pin-toss.co.kr/logo.png",
+    url: "https://sinyongkadeu.co.kr",
+    logo: "https://sinyongkadeu.co.kr/logo.png",
     description:
       "핸드폰 소액결제,신용카드, 핸드폰결제 전용 24시간 실시간발권 신세계상품권,컬쳐랜드상품권,문화상품권등을 실시간 발권합니다",
     address: {
@@ -20,7 +20,7 @@ export function OrganizationJsonLd() {
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+82-10-9300-4202",
-      email: "admin@pin-toss.com",
+      email: "admin@sinyongkadeu.com",
       contactType: "customer service",
       availableLanguage: "Korean",
       hoursAvailable: {
@@ -53,7 +53,7 @@ export function WebSiteJsonLd() {
     "@type": "WebSite",
     name: "신카 머니존몰",
     alternateName: "PinToss Mall",
-    url: "https://pin-toss.co.kr",
+    url: "https://sinyongkadeu.co.kr",
     description:
       "핸드폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
     publisher: {
@@ -217,10 +217,10 @@ export function LocalBusinessJsonLd() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "Store",
-    "@id": "https://pin-toss.co.kr/#organization",
+    "@id": "https://sinyongkadeu.co.kr/#organization",
     name: "신카 머니존몰",
-    url: "https://pin-toss.co.kr",
-    image: "https://pin-toss.co.kr/logo.png",
+    url: "https://sinyongkadeu.co.kr",
+    image: "https://sinyongkadeu.co.kr/logo.png",
     description:
       "핸드폰 소액결제, 신용 카드결제로 24시간 빠르게 구매할 수 있는 상품권 전문몰",
     address: {
@@ -234,7 +234,7 @@ export function LocalBusinessJsonLd() {
     contactPoint: {
       "@type": "ContactPoint",
       telephone: "+82-10-9300-4202",
-      email: "admin@pin-toss.com",
+      email: "admin@sinyongkadeu.com",
       contactType: "customer service",
       availableLanguage: "Korean",
     },

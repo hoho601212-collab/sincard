@@ -1,7 +1,7 @@
 # 신카 머니존 프론트엔드 구현 현황 보고서
 
 **작성일:** 2025-11-14
-**Base URL:** `https://pin-toss.com`
+**Base URL:** `https://sinyongkadeu.com`
 
 ---
 
@@ -569,7 +569,7 @@ Body: { currentPassword, newPassword }
 - **OAuth:** 카카오, 네이버
 
 ### API 통신
-- **Base URL:** https://pin-toss.com
+- **Base URL:** https://sinyongkadeu.com
 - **인증 방식:** Bearer Token (자동 주입)
 - **에러 처리:** Custom ApiError 클래스
 

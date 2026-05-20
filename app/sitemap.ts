@@ -1,6 +1,6 @@
 import { MetadataRoute } from 'next';
 
-const BASE_URL = 'https://pin-toss.com';
+const BASE_URL = 'https://sinyongkadeu.com';
 
 // Sanity 환경변수 체크
 const SANITY_ENABLED =

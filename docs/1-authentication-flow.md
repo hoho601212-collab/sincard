@@ -51,7 +51,7 @@ AuthContext.login (토큰 저장)
 카카오/네이버 버튼 클릭
   ↓
 백엔드 OAuth URL로 리다이렉트
-(https://pin-toss.com/api/oauth/login?loginType=KAKAO)
+(https://sinyongkadeu.com/api/oauth/login?loginType=KAKAO)
   ↓
 OAuth 인증 서버 (카카오/네이버)
   ↓
