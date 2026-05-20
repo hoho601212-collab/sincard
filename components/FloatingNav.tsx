@@ -170,24 +170,20 @@ export function FloatingNav() {
   };
 
   const handleOrderClick = () => {
-    if (isAuthenticated) {
-      router.push("/order");
-    } else {
-      router.push("/login");
-    }
-  };
+  window.location.href = "https://sincard.vercel.app/about";
+};
 
   return (
     <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50 hidden 2xl:flex">
       <div className="bg-white border-l-[1.5px] border-t-[1.5px] border-b-[1.5px] border-[#EEEEEE] rounded-l-[10px] px-4 py-6 flex flex-col gap-6 items-center shadow-lg">
         {/* 섹션 순서대로 정렬 */}
-        <NavItem icon={<IconMenu />} label="전체 상품" href="#products" />
+        <NavItem icon={<IconMenu />} label="핵심 가이드" href="#products" />
 
         <NavItem icon={<IconNotice />} label="공지사항" href="#notice" />
         <NavItem icon={<IconFaq />} label="FAQ" href="#faq" />
         <NavItem
           icon={<IconCard />}
-          label="결제내역"
+          label="회사 소개"
           onClick={handleOrderClick}
         />
 
