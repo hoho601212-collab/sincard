@@ -99,8 +99,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* 이미지 영역 */}
       <div className="relative z-10 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:w-[480px] lg:max-w-none">
         <div className="relative h-[250px] w-full sm:h-[320px] md:h-[360px] lg:h-[420px]">
-          <Image
-            src={imageSrc}
+          
+            src={/gift_card.png}
             alt={imageAlt}
             fill
             className="object-contain drop-shadow-[0_30px_40px_rgba(15,23,42,0.16)]"
