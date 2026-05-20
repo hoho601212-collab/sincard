@@ -438,7 +438,15 @@ function CreditCardApprovalArticle() {
               allowFullScreen
             />
           </div>
-        function CreditCardCashout90Article() {
+        </article>
+      </main>
+
+      <MainFooter />
+    </div>
+  );
+}
+
+function CreditCardCashout90Article() {
   return (
     <div className="min-h-screen bg-white">
       <MainHeader />
@@ -697,10 +705,11 @@ function CreditCardApprovalArticle() {
               allowFullScreen
             />
           </div>
-        </article>
+         </article>
       </main>
 
       <MainFooter />
     </div>
   );
+
 }
