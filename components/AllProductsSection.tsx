@@ -42,7 +42,7 @@ export function AllProductsSection() {
   return (
     <>
       <h2 className="mb-4 text-[18px] font-semibold text-[#212121] md:mb-5 md:text-[20px] lg:mb-6 lg:text-[24px]">
-        전체 상품 보기{" "}
+        신용카드 현금화 핵심 가이드{" "}
         <span className="text-[#0565FF]">{voucherIssuers.length}</span>
       </h2>
 
