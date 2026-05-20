@@ -11,46 +11,19 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://pintoss.co.kr"),
   title: {
-    default: "핸드폰 소액결제 | 컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
-    template: "%s | PINTOSS MALL",
+    default: "신카머니존 | 신용카드 현금화 핵심 가이드",
+    template: "%s | 신카머니존",
   },
   description:
-    "핸드폰 소액결제 신용카드, 핸드폰결제 전용 24시간 실시간발권 신세계상품권,컬쳐랜드상품권,문화상품권등을 실시간 발권합니다",
+    "신카머니존 에서 신용카드 현금화 핵심 가이드를 통해서 안전하게 이용하는 방법에 대해서 알아보세요 5분 내 입금, 무이자 할부 가능",
   keywords: [
-  "핸드폰 소액결제",
-  "휴대폰 소액결제",
-  "소액결제 현금화",
-  "소액결제현금화", 
-  "휴대폰 결제 구조",
-  "소액결제 이용 흐름",
-  "휴대폰 소액결제 안내",
-  "상품권 결제 방식",
-  "상품권 이용 가이드",
-  "모바일 결제 정보",
-  "휴대폰결제 절차",
-  "결제 제한 사유",
-  "상품권 사용 흐름",
-  "온라인 상품권 정보",
-  "모바일상품권 안내",
-  "기프트카드 이용 방법",
-  "컬쳐랜드 이용 안내",
-  "도서문화상품권 사용법",
-  "구글 기프트카드 안내",
-  "휴대폰 인증 절차",
-  "휴대폰결제 기준",
-  "상품권 구매 과정",
-  "결제 정책 안내",
-  "휴대폰 결제 FAQ",
-  "상품권 이용 기준",
-  "결제 오류 원인",
-  "모바일 결제 가이드",
-  "온라인 결제 흐름",
-  "상품권 정보 페이지",
-  "휴대폰 결제 확인사항",
+  "신용카드 현금화",
+  "신카 머니존",
+  
   ],
-  authors: [{ name: "PINTOSS MALL" }],
-  creator: "PINTOSS MALL",
-  publisher: "PINTOSS MALL",
+  authors: [{ name: "신카 머니존" }],
+  creator: "신카 머니존",
+  publisher: "신카 머니존",
   formatDetection: {
     email: false,
     address: false,
@@ -61,23 +34,23 @@ export const metadata: Metadata = {
   },
   
   verification: {
-    google: "HbcLE5gNg0Ya-TDJRhKtF5UBRKF8-koDk43YBgzxapo",
+    google: "",
     other: {
-      "naver-site-verification": "37a117ff6475928f6ce764fbddf83ff62f6e2e7a",
+      "",
     },
   },
   openGraph: {
-    title: "핸드폰 소액결제 | 컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
+    title: "신카머니존 | 신용카드 현금화 핵심 가이드",
     description:
-      "핸드폰 소액결제 신용카드, 핸드폰결제 전용 24시간 실시간발권 신세계상품권,컬쳐랜드상품권,문화상품권등을 실시간 발권합니다",
+      "신카머니존 에서 신용카드 현금화 핵심 가이드를 통해서 안전하게 이용하는 방법에 대해서 알아보세요 5분 내 입금, 무이자 할부 가능",
     url: "https://pintoss.co.kr",
-    siteName: "핀토스몰 PinToss Mall",
+    siteName: "신카 머니존",
     images: [
       {
         url: "https://pintoss.co.kr/og-image.png",
         width: 1200,
         height: 630,
-        alt: "핸드폰 소액결제|컬쳐랜드,온라인 문화상품권 구매 다양한 결제",
+        alt: "신카머니존 | 신용카드 현금화 핵심 가이드",
       },
     ],
     locale: "ko_KR",
@@ -85,9 +58,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "핸드폰 소액결제 | 컬쳐랜드,온라인 문화상품권 구매 다양한 결제 상품권 현금화",
+    title: "신카머니존 | 신용카드 현금화 핵심 가이드",
     description:
-      "핸드폰 소액결제 신용카드, 핸드폰결제 전용 24시간 실시간발권 신세계상품권,컬쳐랜드상품권,문화상품권등을 실시간 발권합니다",
+      "신카머니존 에서 신용카드 현금화 핵심 가이드를 통해서 안전하게 이용하는 방법에 대해서 알아보세요 5분 내 입금, 무이자 할부 가능",
     images: ["https://pintoss.co.kr/og-image.png"],
   },
   robots: {
