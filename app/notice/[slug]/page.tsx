@@ -11,7 +11,7 @@ export const revalidate = 60;
 export const dynamicParams = true;
 
 const FIXED_SLUG = "2026-credit-card-approval-requirements";
-const SECOND_FIXED_SLUG = "신용카드-현금화-vs-소액결제-현금화-차이";
+const SECOND_FIXED_SLUG = "credit-card-cashout-vs-mobile-payment-cashout";
 
 export async function generateMetadata({
   params,
