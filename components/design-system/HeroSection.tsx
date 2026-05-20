@@ -46,7 +46,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
       {/* 텍스트 영역 */}
       <div className="relative z-10 flex w-full flex-col items-center text-center lg:max-w-[560px] lg:items-start lg:text-left">
-
         <span className="mb-5 inline-flex items-center rounded-full border border-[#BFDBFE] bg-white px-4 py-2 text-[13px] font-bold tracking-[0.3px] text-[#2563EB] shadow-sm">
           업계 최고 지급률 90% 5분내 빠른 처리
         </span>
@@ -99,8 +98,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       {/* 이미지 영역 */}
       <div className="relative z-10 w-full max-w-[320px] sm:max-w-[380px] md:max-w-[450px] lg:w-[480px] lg:max-w-none">
         <div className="relative h-[250px] w-full sm:h-[320px] md:h-[360px] lg:h-[420px]">
-          
-            src={/gift_card.png}
+          <Image
+            src={imageSrc}
             alt={imageAlt}
             fill
             className="object-contain drop-shadow-[0_30px_40px_rgba(15,23,42,0.16)]"
@@ -112,7 +111,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-[18px] border border-[#E2E8F0] bg-white/95 px-5 py-3 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur">
           <div className="h-3 w-3 rounded-full bg-[#22C55E]" />
 
-          
+          <span className="text-[13px] font-semibold text-[#334155]">
+            실시간 이용 가능
+          </span>
         </div>
       </div>
     </section>
