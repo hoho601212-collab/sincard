@@ -16,15 +16,15 @@ export interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({
   title = [
-    '휴대폰 결제와 신용카드로',
-    '다양한 상품권을 간편하게 확인하세요',
+    '신용카드 현금화, 안전한 방법부터 수수료 비교',
+    '간편하게 확인하세요',
   ],
   subtitle =
-    '모바일 결제와 카드 결제를 기반으로 컬쳐랜드, 구글기프트카드, 문화상품권 등 다양한 디지털 상품권 이용 흐름을 한눈에 안내합니다.',
+    '무이자 할부 혜택 카드사별 최대 6개월.',
   buttonText = '상품권 이용 안내 보기',
   onButtonClick,
-  imageSrc = '/hero-image.png',
-  imageAlt = '상품권 결제 이용 안내',
+  imageSrc = '/gift_card.png',
+  imageAlt = '메인 배너',
   className,
 }) => {
   return (
@@ -48,7 +48,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       <div className="relative z-10 flex w-full flex-col items-center text-center lg:max-w-[560px] lg:items-start lg:text-left">
 
         <span className="mb-5 inline-flex items-center rounded-full border border-[#BFDBFE] bg-white px-4 py-2 text-[13px] font-bold tracking-[0.3px] text-[#2563EB] shadow-sm">
-          PINTOSS PAYMENT GUIDE
+          업계 최고 지급률 90% 5분내 빠른 처리
         </span>
 
         <div className="text-[30px] font-black leading-[1.2] tracking-[-1px] text-[#0F172A] sm:text-[38px] md:text-[46px] lg:text-[54px]">
