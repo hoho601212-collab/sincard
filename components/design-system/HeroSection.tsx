@@ -112,9 +112,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         <div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-3 rounded-[18px] border border-[#E2E8F0] bg-white/95 px-5 py-3 shadow-[0_12px_30px_rgba(15,23,42,0.08)] backdrop-blur">
           <div className="h-3 w-3 rounded-full bg-[#22C55E]" />
 
-          <p className="text-[13px] font-semibold text-[#334155]">
-            모바일 상품권 이용 흐름 안내중
-          </p>
+          
         </div>
       </div>
     </section>
